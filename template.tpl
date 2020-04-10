@@ -5,8 +5,8 @@
         <div class="card-body">
             <div class="list-group">
                 <a target="_blank" href="https://kartenn.region-bretagne.fr/fichenn/insee_2016/{{dataid}}" class="bg-dark fichen-link list-group-item list-group-action">La population du territoire</a>
-                <a target="_blank" href="#" class="bg-dark fichen-link list-group-item list-group-action">L'EPCI et les communes</a></div>
-                <a target="_blank" href="https://www.banatic.interieur.gouv.fr/V5/recherche-de-groupements/fiche-raison-sociale.php?siren={{dataid}}" class="bg-dark fichen-link list-group-item list-group-action">Fiche Banatic</a>
+                <a target="_blank" href="https://kartenn.region-bretagne.fr/fichenn/epci_communes/{{dataid}}" class="bg-dark fichen-link list-group-item list-group-action">L'EPCI et les communes</a></div>
+                <!--<a target="_blank" href="https://www.banatic.interieur.gouv.fr/V5/recherche-de-groupements/fiche-raison-sociale.php?siren={{dataid}}" class="bg-dark fichen-link list-group-item list-group-action">Fiche Banatic</a>-->
                 <a target="_blank" href="https://kartenn.region-bretagne.fr/fichenn/epci/{{dataid}}" class="bg-dark fichen-link list-group-item list-group-action">Fiche lycées</a>
                 <!--<a target="_blank" href="#" class="bg-dark fichen-link list-group-item list-group-action">L’engagement du territoire dans la Breizh Cop </a></div>-->
         </div>
