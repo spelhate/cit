@@ -1,7 +1,13 @@
 body {
     font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
 }
-
+h1{
+    margin-top: 1rem;
+}
 .rb2 {
     padding-left: 78px;
     background: url(https://www.bretagne.bzh/app/themes/bretagne/dist/img/logo.svg) no-repeat;
@@ -20,7 +26,7 @@ body {
 }
 
 #epci_list {
-    padding: 50px 20px 50px 20px;
+    padding: 0px 20px 50px 20px;
 }
 
 #epci_list .btn-link {
@@ -36,8 +42,7 @@ a.fichen-link {
     color: white;
 }
 #epci_map{
-    margin-top: 100px;
-    height:600px;
+    height:750px;
 }
 .toolTipHovered{
     background-color: rgba(0,0,0,0.95);
@@ -50,6 +55,22 @@ a.fichen-link {
 #toggleButton{
     position: fixed;
     bottom: 0;
-    z-index: 10;
+    z-index: 999;
     border-radius: 0;
+}
+.toggle_visible{
+    margin: 0px 50px;
+}
+.toggle_hidden_margin{
+    margin: 0px 50px;
+}
+.full_screen_map_container{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+html, .fullscreen_map{
+    height: 100% !important;
+    width: 100%;
 }
