@@ -87,8 +87,8 @@ html,
     width: 100%;
 }
 @media (max-width: 575.98px) {
-    .mx-xs-25 {
-        margin: 0 25px;
+    .mx-xs-10 {
+        margin: 0 10px;
     }
 }
 @media (min-width: 576px) {
