@@ -1,13 +1,16 @@
 body {
-    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     padding: 0;
     margin: 0;
     height: 100%;
     width: 100%;
 }
-h1{
-    margin-top: 1rem;
+
+h1 {
+    text-align: center;
+    margin-top: 10px;
 }
+
 .rb2 {
     padding-left: 78px;
     background: url(https://www.bretagne.bzh/app/themes/bretagne/dist/img/logo.svg) no-repeat;
@@ -27,6 +30,7 @@ h1{
 
 #epci_list {
     padding: 0px 20px 50px 20px;
+    text-align: center;
 }
 
 #epci_list .btn-link {
@@ -34,43 +38,71 @@ h1{
 }
 
 .card.selected {
-    border-bottom: 1px solid rgba(0,0,0,.125)!important;
+    border-bottom: 1px solid rgba(0, 0, 0, .125) !important;
 }
 
 
 a.fichen-link {
     color: white;
 }
-#epci_map{
-    height:750px;
+
+#epci_map {
+    height: 750px;
 }
-.toolTipHovered{
-    background-color: rgba(0,0,0,0.95);
+
+.toolTipHovered {
+    background-color: rgba(0, 0, 0, 0.95);
     color: snow;
     font-size: larger;
     font-weight: bolder;
-    box-shadow: 0 8px 17px 2px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
     border: unset;
 }
-#toggleButton{
+
+#toggleButton {
     position: fixed;
     bottom: 0;
     z-index: 999;
     border-radius: 0;
 }
-.toggle_visible{
+
+.toggle_visible {
+    margin: 0px 25px;
+}
+
+.toggle_hidden_margin {
     margin: 0px 50px;
 }
-.toggle_hidden_margin{
-    margin: 0px 50px;
-}
-.full_screen_map_container{
+
+.full_screen_map_container {
     padding: 0;
     margin: 0;
     height: 100%;
     width: 100%;
 }
-html, .fullscreen_map{
+
+html,
+.fullscreen_map {
     height: 100% !important;
     width: 100%;
+}
+@media (max-width: 575.98px) {
+    .mx-xs-25 {
+        margin: 0 25px;
+    }
+}
+@media (min-width: 576px) {
+    .mx-sm-50 {
+        margin: 0 50px;
+    }
+}
+@media (min-width: 768px) {
+    .mx-md-100 {
+        margin: 0 100px;
+    }
+}
+@media (min-width: 992px) {
+    .mx-lg-125 {
+        margin: 0 125px;
+    }
 }
