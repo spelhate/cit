@@ -1,8 +1,17 @@
+function resizeHandle(){
+    var hauteur_nav = $(".navbar")[0].offsetHeight
+    $("#epci_map").css("margin-top", hauteur_nav);
+    if ($("#epci_map").parent().css("display") == "none") {
+        $("#pageTitle").css("margin-top", hauteur_nav + 10);
+    } else {
+        $("#pageTitle").css("margin-top", 10);
+    }
+    
+}
 $(document).ready(function () {
-    var hauteur_nav = $(".navbar")[0].offsetHeight;
     var hauteur_bouton = document.getElementById("toggleButton").offsetHeight;
-    $("#epci_map").css("margin-top",hauteur_nav);
-    $("#epci_map").css("padding-bottom",hauteur_bouton);
+    $("#epci_map").css("padding-bottom", hauteur_bouton);
+    resizeHandle();
     // Init Map
     var map = L.map('epci_map').setView([48.10743118848039, -2.8564453125000004], 8);
     var osmLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
@@ -95,15 +104,14 @@ $(document).ready(function () {
     // Toggle map or list
     $("#toggleButton").on('click', function () {
         var carte = $(".toggle_hidden");
-        if(carte.hasClass("d-none")){
+        if (carte.hasClass("d-none")) {
             carte.removeClass("d-none");
             carte.removeClass("toggle_hidden_margin");
             carte.addClass("fullscreen_map");
             carte.children("#epci_map").addClass("fullscreen_map");
             map.invalidateSize();
             map.setZoom(7);
-        }
-        else{
+        } else {
             carte.addClass("d-none");
             carte.addClass("toggle_hidden");
             carte.removeClass("fullscreen_map");

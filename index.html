@@ -23,20 +23,20 @@
 
 </head>
 
-<body>
+<body onresize="resizeHandle()">
 
-  <nav id="navigation" class="rb-nav navbar fixed-top navbar-expand-md">
+  <nav id="navigation" class="rb-nav navbar fixed-top navbar-expand">
 
     <span class="navbar-brand rb2">Carte d'identité du territoire</span>
 
     <div class="collapse navbar-collapse" id="search">
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0 d-none d-md-block">
         <li class="nav-item">
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">beta</a>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" id="myInput" type="text" placeholder="Rechercher..">
+        <input class="form-control mr-2" id="myInput" type="text" placeholder="Rechercher..">
       </form>
     </div>
   </nav>
@@ -48,10 +48,10 @@
     <div class="toggle_visible">
       <div class="row">
         <div class="col-lg-12">
-          <h1 class="rb-title">Fiches territoires</h1>
+          <h1 id="pageTitle" class="rb-title">Fiches territoires</h1>
         </div>
       </div>
-      <div class="row" style="padding-top: 25px;">
+      <div class="row mx-sm-50 mx-xs-25 mx-md-100" style="padding-top: 25px;">
         <div id="epci_list" class="accordion col-lg-12">
         </div>
       </div>
