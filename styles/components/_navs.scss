@@ -1,0 +1,60 @@
+/**************************************************/
+/*************** HANDLES NAVS *********************/
+/**************************************************/
+
+.nav-link:not(.disabled) {
+  color: $black;
+
+  &:hover {
+    color: $black;
+    text-decoration: underline;
+  }
+
+  &.active {
+    color: $mainColor;
+    font-weight: 600;
+
+    &:hover {
+      color: $mainColor;
+    }
+  }
+
+  .is-white & {
+    color: $white;
+
+    &:hover {
+      color: $white;
+      text-decoration: underline;
+    }
+
+    &.active {
+      color: $mainColor;
+      font-weight: 600;
+
+      &:hover {
+        color: $mainColor;
+      }
+    }
+  }
+}
+.dropdown-menu {
+  background: #232323;
+  border: none;
+  box-shadow: $shadow;
+  transition: box-shadow 0.2s ease-in-out;
+
+  &:hover {
+    box-shadow: $shadowHover;
+  }
+}
+.dropdown-item {
+  color: $white;
+
+  &:hover {
+    color: $mainColor;
+    background: #232323;
+  }
+}
+.dropdown-divider {
+  border-color: #121212;
+}

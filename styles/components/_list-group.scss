@@ -1,0 +1,9 @@
+/**************************************************/
+/************** HANDLES LIST GROUPS ***************/
+/**************************************************/
+.list-group-item {
+  &.active {
+    background-color: $mainColor;
+    border-color: $mainColor;
+  }
+}

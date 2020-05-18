@@ -1,0 +1,482 @@
+/**************************************************/
+/***************** HANDLES CARDS ******************/
+/**************************************************/
+
+// card
+.card {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  border: none;
+  border-radius: 6px !important;
+  transition: 0.3s ease-in-out;
+
+  .date {
+    font-size: size(10);
+    font-style: italic;
+  }
+
+  &:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.35);
+  }
+}
+.card-link {
+  font-size: size(15);
+}
+.card-title {
+  color: $black;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+.card-grand-projet {
+  display: block;
+  position: relative;
+  padding: 0;
+  background: none;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+  overflow: hidden;
+  backface-visibility: hidden;
+  min-height: 300px;
+
+  .card-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    transition: 0.5s ease-in-out;
+    backface-visibility: hidden;
+  }
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 60%;
+    min-height: 120px;
+    padding: 20px 15px 15px;
+    background: $white;
+    border-radius: 0 6px 0 0;
+  }
+  .card-title {
+    margin-bottom: 0.75em;
+    font-size: size(15);
+    line-height: size(20);
+    font-weight: 700;
+  }
+  .card-link {
+    align-self: flex-start;
+  }
+
+  &:hover {
+    .cover {
+      transform: scale(1.05);
+    }
+    .btn-normal {
+      &:after {
+        transform: translateX(5px);
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    padding: 20px 15px;
+
+    .card-content {
+      padding-top: 121%;
+    }
+  }
+  @media (min-width: 1200px) {
+    .card-image {
+      top: -2.5%;
+      left: -2.5%;
+      height: 105%;
+      width: 105%;
+      transform: scale(0.96);
+    }
+    &:hover {
+      .card-image {
+        transform: scale(1);
+      }
+    }
+  }
+}
+.card-projet {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background: $white;
+  padding: 15px;
+  box-shadow: $shadow;
+  transition: 0.3s ease-in-out;
+
+  .card-image {
+    float: left;
+    width: 33%;
+    margin-right: 5%;
+    padding-top: 33%;
+    border-radius: 6px;
+    background-size: cover;
+    background-position: cover;
+  }
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 62%;
+    padding: 0;
+  }
+  .card-title {
+    margin-top: 10px;
+    font-size: size(15);
+    line-height: size(20);
+  }
+  .card-link {
+    margin-bottom: 10px;
+    align-self: flex-start;
+  }
+
+  &:hover {
+    box-shadow: $shadowHover;
+    text-decoration: none;
+
+    .card-link {
+      &:after {
+        transform: translateX(5px);
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 208px;
+
+    .card-image {
+      float: none;
+      width: 100%;
+      padding-top: 100%;
+    }
+    .card-body {
+      width: 100%;
+      height: 100%;
+    }
+    .card-title {
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+  }
+  @media (min-width: 992px) {
+    .card-title {
+      margin-bottom: 20px;
+    }
+  }
+}
+.card-primary {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+  color: $black;
+  background: #f7f7f7;
+  box-shadow: none;
+  font-size: size(15);
+  line-height: 1.4;
+
+  .card-title {
+    color: $black;
+    line-height: 1.2;
+  }
+  .card-link {
+    align-self: flex-end;
+    margin-top: 10px;
+  }
+
+  &:hover {
+    text-decoration: none;
+    box-shadow: none;
+
+    .card-link {
+      &:after {
+        transform: translateX(5px);
+      }
+    }
+  }
+
+  // variantes
+  &.is-grey {
+    color: $white;
+    background: $colorGrey;
+
+    .card-title {
+      color: $white;
+      opacity: 0.9;
+    }
+    span,
+    p {
+      opacity: 0.9;
+    }
+    .card-link {
+      opacity: 1;
+    }
+    .date {
+      opacity: 0.8;
+    }
+  }
+
+  // éléments spécifiques
+  .emploi-content {
+    margin-top: 10px;
+    color: $black;
+    font-size: size(12);
+    font-weight: 600;
+
+    span {
+      display: flex;
+      align-items: center;
+      margin: 5px 0;
+    }
+    i {
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      margin-right: 10px;
+      font-size: size(25);
+      vertical-align: text-bottom;
+      transform: translateY(-0.05em);
+    }
+  }
+}
+.card-elu,
+.card-publication {
+  .card-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    color: $black;
+    text-decoration: none;
+  }
+}
+.card-elu {
+  .card-image {
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+  }
+  .card-body {
+    width: calc(100% - 95px);
+    margin-left: 30px;
+  }
+  .elu-fonction,
+  .elu-membre {
+    display: block;
+  }
+  .elu-fonction {
+    margin-bottom: 5px;
+    font-size: size(13);
+    font-weight: 600;
+    line-height: 1.1;
+  }
+  .elu-membre {
+    font-size: size(13);
+    font-style: italic;
+  }
+
+  @media (min-width: 992px) {
+    .card-image {
+      height: 85px;
+      width: 85px;
+    }
+    .card-body {
+      width: calc(100% - 115px);
+    }
+  }
+}
+.card-publication {
+  .card-image {
+    height: 60px;
+    width: 45px;
+    border-radius: 6px;
+  }
+  .card-body {
+    width: calc(100% - 75px);
+    margin-left: 20px;
+  }
+  .card-title {
+    margin-bottom: 5px;
+  }
+  .date {
+    color: $mainColor;
+    font-size: size(12);
+    font-weight: 600;
+  }
+}
+.card-pratique {
+  background: $white;
+  box-shadow: $shadow;
+
+  &:hover {
+    box-shadow: $shadowHover;
+  }
+}
+.card-pratique-end {
+  align-items: center;
+  background: $mainColor;
+  box-shadow: $shadow;
+
+  .card-title {
+    color: $white;
+  }
+  .card-link {
+    align-self: center;
+  }
+
+  &:hover {
+    box-shadow: $shadowHover;
+  }
+}
+.card-actualite {
+  box-shadow: $shadow;
+
+  .card-header {
+    display: flex;
+    padding: 0;
+    border: none;
+  }
+  .card-image {
+    width: 110px;
+    height: 110px;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .card-title {
+    width: calc(100% - 120px);
+    margin-bottom: 20px;
+    margin-right: 10px;
+    line-height: 1.4;
+  }
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .date,
+  .actualite-extrait {
+    display: none;
+  }
+  .date {
+    margin-bottom: 5px;
+  }
+  .card-link {
+    margin-top: 0;
+  }
+
+  &:hover {
+    box-shadow: $shadowHover;
+  }
+
+  &.no-image {
+    .card-title {
+      width: 100%;
+      margin: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .card-header {
+      margin-bottom: 10px;
+    }
+    .card-image {
+      height: 90px;
+      width: 90px;
+    }
+    .card-title {
+      width: calc(100% - 100px);
+      margin-bottom: 0;
+    }
+    .date,
+    .actualite-extrait {
+      display: block;
+    }
+    .card-link {
+      margin-top: 20px;
+    }
+
+    &.no-image {
+      .card-title {
+        margin-bottom: 0;
+      }
+    }
+    &.no-body {
+      .card-link {
+        margin-top: 0;
+      }
+    }
+  }
+}
+.card-parole {
+  .date {
+    margin-bottom: 10px;
+  }
+  .parole-categories {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+  .alert {
+    margin: 0 5px;
+    font-weight: 600;
+  }
+}
+.card-social {
+  padding: 20px 20px 10px 20px;
+  border: 1px solid $colorDark !important;
+  box-shadow: none;
+
+  .card-title {
+    position: relative;
+    margin-bottom: 15px;
+    padding-left: 30px;
+    min-height: 12px;
+    font-size: size(12);
+    font-style: italic;
+
+    .fab {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      font-size: size(20);
+      transform: translateY(-50%);
+    }
+  }
+  .card-body {
+    padding: 0;
+  }
+  .card-image {
+    border-radius: 6px;
+  }
+  .date {
+    margin-top: 10px;
+  }
+
+  &:hover {
+    box-shadow: none;
+  }
+
+  &.is-grey {
+    color: $white;
+    background: $colorDark;
+
+    .card-title {
+      color: $white;
+    }
+  }
+}

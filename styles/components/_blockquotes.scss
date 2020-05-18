@@ -1,0 +1,72 @@
+/**************************************************/
+/************** HANDLES BLOCKQUOTES ***************/
+/**************************************************/
+
+blockquote {
+  position: relative;
+  padding: 40px;
+  @include bzh-font();
+  page-break-inside: avoid;
+
+  &:before,
+  &:after {
+    content: '“';
+    position: absolute;
+    color: $mainColor;
+    font-size: size(100);
+  }
+  &:before {
+    top: -20px;
+    left: 0;
+  }
+  &:after {
+    bottom: -10px;
+    right: 0;
+    transform: rotate(180deg);
+  }
+
+  p {
+    text-align: center;
+    font-weight: 700;
+    font-size: size(25);
+  }
+  footer {
+    display: block;
+    margin-right: 15px;
+    font-size: size(12);
+    text-align: right;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  }
+
+  @media (min-width: 992px) {
+    &:before,
+    &:after {
+      font-size: size(150);
+      line-height: size(230);
+    }
+    &:before {
+      top: -60px;
+      left: -10px;
+    }
+    &:after {
+      bottom: -30px;
+      right: -10px;
+    }
+
+    p {
+      font-size: size(18);
+    }
+    footer {
+      font-size: size(14);
+    }
+  }
+  @media (min-width: 1200px) {
+    width: 80%;
+    margin: 0 auto;
+
+    p {
+      font-size: size(25);
+      line-height: size(30);
+    }
+  }
+}

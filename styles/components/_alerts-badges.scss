@@ -1,0 +1,161 @@
+/**************************************************/
+/*********** HANDLES ALERTS & BADGES **************/
+/**************************************************/
+
+.alert {
+  display: inline-block;
+  font-size: size(12);
+  padding: 5px 25px;
+  border: none;
+  border-radius: 23px;
+  margin: auto;
+}
+.alert-primary {
+  color: $white;
+  background: $mainColor;
+
+  .alert-link {
+    color: $white;
+  }
+}
+.alert-secondary {
+  color: $white;
+  background: lighten($colorGrey, 10%);
+
+  .alert-link {
+    color: $white;
+  }
+}
+.alert-success {
+  color: $white;
+  background: lighten($colorSuccess, 10%);
+
+  .alert-link {
+    color: $white;
+  }
+}
+.alert-danger {
+  color: $white;
+  background: lighten($colorDanger, 10%);
+
+  .alert-link {
+    color: $white;
+  }
+}
+.alert-warning {
+  color: $white;
+  background: lighten($colorWarning, 10%);
+
+  .alert-link {
+    color: $white;
+  }
+}
+.alert-info {
+  color: $white;
+  background: lighten($colorInfo, 10%);
+
+  .alert-link {
+    color: $white;
+  }
+}
+.alert-dark {
+  color: $white;
+  background: lighten($colorDark, 10%);
+
+  .alert-link {
+    color: $white;
+  }
+}
+
+// badges
+.badge {
+  padding: 3px 12px;
+  background: none;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 23px;
+  font-size: size(12);
+  font-weight: 600;
+  line-height: size(18);
+  transition: 0.2s ease-in-out;
+
+  &[href]:hover,
+  &[href]:focus {
+    background: $mainColor;
+  }
+}
+.badge-primary {
+  color: $mainColor;
+  border-color: $mainColor;
+
+  &[href]:hover,
+  &[href]:focus {
+    background: $mainColor;
+  }
+}
+.badge-secondary {
+  color: $colorGrey;
+  border-color: $colorGrey;
+
+  &[href]:hover,
+  &[href]:focus {
+    background: $colorGrey;
+  }
+}
+.badge-success {
+  color: $colorSuccess;
+  border-color: $colorSuccess;
+
+  &[href]:hover,
+  &[href]:focus {
+    background: $colorSuccess;
+  }
+}
+.badge-danger {
+  color: $colorDanger;
+  border-color: $colorDanger;
+
+  &[href]:hover,
+  &[href]:focus {
+    background: $colorDanger;
+  }
+}
+.badge-warning {
+  color: $colorWarning;
+  border-color: $colorWarning;
+
+  &[href]:hover,
+  &[href]:focus {
+    color: $white;
+    background: $colorWarning;
+  }
+}
+.badge-info {
+  color: $colorInfo;
+  border-color: $colorInfo;
+
+  &[href]:hover,
+  &[href]:focus {
+    color: $white;
+    background: $colorInfo;
+  }
+}
+.badge-dark {
+  color: $colorDark;
+  border-color: $colorDark;
+
+  &[href]:hover,
+  &[href]:focus {
+    background: $colorDark;
+  }
+}
+.badge-light {
+  color: $white;
+  border-color: $white;
+
+  &[href]:hover,
+  &[href]:focus {
+    color: $black;
+    background: $white;
+  }
+}

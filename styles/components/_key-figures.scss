@@ -1,0 +1,46 @@
+/**************************************************/
+/************* HANDLES KEY FIGURES ****************/
+/**************************************************/
+
+.chiffre-cle {
+  padding: 8px;
+  max-width: 212px;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $mainColor;
+    height: 100%;
+    border-radius: 6px;
+    padding: 16% 10px 16%;
+
+    .value {
+      margin-bottom: 0.2em;
+      @include bzh-font();
+      font-weight: bold;
+      text-align: center;
+      font-size: size(30);
+      line-height: 1em;
+
+      sup {
+        font-size: 0.5em;
+      }
+    }
+    .legend {
+      text-align: center;
+      font-size: size(12);
+      line-height: size(15);
+      font-weight: 600;
+    }
+  }
+
+  @media (min-width: 768px) {
+    padding: 0 8px;
+
+    .element-inner {
+      border: 2px solid $mainColor;
+    }
+  }
+}

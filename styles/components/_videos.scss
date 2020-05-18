@@ -1,0 +1,152 @@
+/**************************************************/
+/***************** HANDLES VIDEOS *****************/
+/**************************************************/
+
+.video {
+  display: block;
+  position: relative;
+  padding-top: 56.25%;
+  width: 100%;
+  margin-top: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 6px;
+  overflow: hidden;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in-out;
+  }
+
+  .video-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: 40px;
+      width: 40px;
+      background: $white;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      transition: 0.2s ease-in-out;
+    }
+    .icon-lecture {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: 2px;
+      color: $mainColor;
+      font-size: size(25);
+      transform: translate(-50%, -50%);
+      z-index: 10;
+    }
+
+    &:hover {
+      &:before {
+        transform: translate(-50%, -50%) scale(1.2);
+      }
+    }
+  }
+  .video-title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0 10px;
+    color: $white;
+    font-size: size(16);
+    text-align: center;
+    text-shadow: 0 0 10px $black;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+  }
+  video {
+    width: 100%;
+    margin: 0;
+  }
+  .video-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    &.is-active {
+      width: 100%;
+      height: 100%;
+      z-index: 20;
+
+      iframe {
+        opacity: 1;
+        z-index: 20;
+        pointer-events: auto;
+      }
+    }
+  }
+  iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: black;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+
+    &.active {
+      opacity: 1;
+      pointer-events: auto;
+      z-index: 20;
+    }
+  }
+  &:hover {
+    &:before {
+      background: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  @media (min-width: 992px) {
+    .video-play {
+      top: auto;
+      left: auto;
+      bottom: 40px;
+      right: 40px;
+      height: 60px;
+      width: 60px;
+      transform: none;
+
+      &:before {
+        height: 60px;
+        width: 60px;
+        z-index: 1;
+      }
+      .icon-lecture {
+        font-size: size(40);
+      }
+    }
+    .video-title {
+      left: 40px;
+      right: 140px;
+      bottom: 60px;
+      width: auto;
+      padding: 0;
+      margin: 0;
+      text-align: left;
+      font-size: size(20);
+      font-weight: 500;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+/**************************************************/
+/************** HANDLES BREADCRUMB ****************/
+/**************************************************/
+.breadcrumb {
+  padding: 0;
+  background: none;
+  font-size: size(12) !important;
+
+  .breadcrumb-item,
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+  .breadcrumb-item {
+    & + .breadcrumb-item {
+      &:before {
+        content: '>';
+        font-weight: normal;
+      }
+    }
+  }
+  .active {
+    font-weight: bold;
+    text-decoration: none;
+  }
+}

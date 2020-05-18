@@ -1,0 +1,89 @@
+/**************************************************/
+/************** HANDLES TYPOGRAPHY ****************/
+/**************************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,600&display=swap');
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  line-height: 1em;
+  font-weight: bold;
+  font-family: 'bretagneFont';
+
+  &.uppercase {
+    text-transform: uppercase;
+  }
+
+  &.light {
+    color: $white;
+  }
+}
+
+h1,
+.h1 {
+  font-size: size(35);
+  line-height: size(40);
+  text-transform: uppercase;
+}
+h2,
+.h2 {
+  font-size: size(25);
+  line-height: size(30);
+  text-transform: uppercase;
+}
+h3,
+.h3 {
+  font-size: size(20);
+  line-height: size(25);
+}
+h4,
+.h4 {
+  font-size: size(16);
+}
+h5,
+.h5 {
+  font-size: size(15);
+}
+h6,
+.h6 {
+  font-size: size(13);
+}
+
+p {
+  font-size: size(15);
+  line-height: size(20);
+
+  &.chapo,
+  &.lead {
+    font-size: size(15);
+    font-weight: 600;
+  }
+  a {
+    text-decoration: underline;
+  }
+}
+ol,
+ul:not(.page-numbers),
+dl {
+  font-size: size(15);
+  line-height: size(20);
+}
+
+// classes contextuelles
+.text-primary {
+  color: $mainColor !important;
+}
+.bg-primary {
+  color: $white;
+  background-color: $mainColor !important;
+}

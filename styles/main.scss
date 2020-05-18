@@ -1,0 +1,40 @@
+/**************************************************/
+/************** IMPORTS EVERYTHING ****************/
+/**************************************************/
+@import 'generic/mixin';
+
+// ELEMENTS
+@import 'elements/colors';
+@import 'elements/layout';
+@import 'elements/typography';
+
+// GENERIC
+@import 'generic/global';
+
+// COMPONENTS
+@import 'components/buttons';
+@import 'components/cards';
+@import 'components/alerts-badges';
+@import 'components/banner';
+@import 'components/blockquotes';
+@import 'components/breadcrumb';
+@import 'components/accordions';
+@import 'components/carousel';
+@import 'components/encadre';
+@import 'components/footer';
+@import 'components/forms';
+@import 'components/header';
+@import 'components/jumbotron';
+@import 'components/key-figures';
+@import 'components/list-group';
+@import 'components/modals';
+@import 'components/navs';
+@import 'components/pagination';
+@import 'components/progress';
+@import 'components/search';
+@import 'components/selects';
+@import 'components/sidebar';
+@import 'components/videos';
+
+// pages
+@import 'pages/home';
