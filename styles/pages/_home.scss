@@ -1,0 +1,25 @@
+.-home {
+  .title {
+    margin-top: size(42);
+  }
+
+  .-content {
+    #epci_list {
+      .card {
+        margin: 30px 0 0;
+
+        .card-body {
+          display: flex;
+          flex-direction: column;
+          a {
+            display: block;
+            margin-top: size(16);
+            &:first-child {
+              margin-top: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+/**************************************************/
+/************ MIXINS AND FUNCTIONS ****************/
+/**************************************************/
+
+@mixin bzh-font() {
+  font-family: 'bretagneFont';
+}
+.bzh-font {
+  @include bzh-font();
+}
+
+@function size($target, $context: 10) {
+  @return ($target / $context) * 1rem;
+}

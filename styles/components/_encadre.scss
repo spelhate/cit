@@ -1,0 +1,21 @@
+/**************************************************/
+/***************** HANDLES ENCADRES ***************/
+/**************************************************/
+
+.encadre {
+  padding: 15px;
+  border: 1px solid $mainColor !important;
+  border-radius: 6px;
+
+  *:first-child {
+    margin-top: 0;
+  }
+  *:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 30px;
+    border-width: 2px;
+  }
+}

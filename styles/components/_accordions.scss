@@ -1,0 +1,111 @@
+/**************************************************/
+/************** HANDLES ACCORDION *****************/
+/**************************************************/
+
+.accordion {
+  margin: 30px 0 0;
+
+  .bloc {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  > .card {
+    box-shadow: none;
+    background: none;
+
+    & ~ .card {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    > .card-header {
+      position: relative;
+      padding: 15px 100px 15px 15px;
+      margin: 0;
+      max-width: none;
+      color: $white;
+      border-radius: 6px !important;
+      background: $mainColor;
+      -webkit-box-shadow: $shadow;
+      box-shadow: $shadow;
+      font-size: 0.9375rem;
+      font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      text-transform: none;
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
+      cursor: pointer;
+      z-index: 10;
+
+      h2,
+      h3 {
+        font-size: size(15);
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        height: 2px;
+        width: 12px;
+        background: $white;
+        border-radius: 2px;
+        transition: 0.3s ease-in-out;
+      }
+      &:before {
+        transform: translateY(-50%);
+      }
+      &:after {
+        transform: translateY(-50%) rotate(90deg) scale(0);
+      }
+
+      &.collapsed {
+        color: $black;
+        background: $white;
+
+        &:before,
+        &:after {
+          background: $black;
+        }
+        &:after {
+          transform: translateY(-50%) rotate(90deg) scale(1);
+        }
+      }
+    }
+    > div > .card-body {
+      margin: 0 12px;
+      padding: 10px 12px;
+      background: #f7f7f7;
+      border-radius: 0 0 6px 6px;
+      font-size: size(15);
+    }
+  }
+
+  @media (min-width: 1200px) {
+    > .card {
+      & ~ .card {
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+
+      > .card-header {
+        padding: 20px;
+
+        &:before,
+        &:after {
+          right: 30px;
+          width: 16px;
+          height: 3px;
+        }
+      }
+
+      > div > .card-body {
+        padding: 20px;
+
+        font-size: size(15);
+      }
+    }
+  }
+}

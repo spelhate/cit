@@ -1,0 +1,41 @@
+/**************************************************/
+/****************** HANDLES LAYOUT ****************/
+/**************************************************/
+
+$wrapperMaxSize: 1088px;
+$wrapperMidSize: 1004px;
+$wrapperMinSize: 900px;
+$wrapperExtraMinSize: 664px;
+$wrapperWidth: 90%;
+
+.wrapper {
+  width: $wrapperWidth;
+  max-width: $wrapperMidSize;
+  margin: auto;
+
+  img {
+    border-radius: 6px;
+  }
+}
+
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw !important;
+  margin-right: -50vw !important;
+}
+
+.section,
+.bloc {
+  margin: size(60) auto;
+}
+
+.bloc-content {
+  border-radius: 6px;
+  background-color: $lightGrey;
+  padding: size(20);
+  margin-top: size(24);
+  margin-bottom: size(32);
+}
