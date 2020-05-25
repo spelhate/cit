@@ -22,7 +22,7 @@ $(document).ready(function () {
         })
     })
 
-    $("#myInput").on("keyup", function () {
+    $("#search").on("keyup", function () {
         $(".collapse").collapse("hide");
         var value = $(this).val().toLowerCase();
         $("#epci_list .card").filter(function () {
