@@ -9,23 +9,29 @@ var map = new Raphael(mapContainer, MAP_WIDTH, MAP_HEIGHT);
 map.setViewBox(0, 0, 800, 600, false);
 var regions = {};
 
+function decodeEntities(encodedString) {
+    var textArea = document.createElement('textarea');
+    textArea.innerHTML = encodedString;
+    return textArea.value;
+}
+
 // Create all the paths of the svg
 data.forEach(function (item) {
   regions[item.id] = map.path(item.path);
-  regions[item.id].node.id = item.id;
+  regions[item.id].node.id = decodeEntities(item.id);
 
 });
 
 var style = {
-  fill: "#ddd",
-  stroke: "#aaa",
+  fill: "rgba(247, 247, 247, 0.7)",
+  stroke: "#0094AB",
   "stroke-width": 1,
   "stroke-linejoin": "round",
   cursor: "pointer"
 };
 
 var hoverStyle = {
-  fill: "#A8BED5"
+  fill: "#0094AB"
 }
 
 var animationSpeed = 250;
@@ -33,17 +39,11 @@ var animationSpeed = 250;
 for (var regionName in regions) {
   (function (region) {
     region.attr(style);
-    region.attr("title",region.node.id.split("|")[0]);
-    var tooltip = document.querySelectorAll('.coupontooltip');
+    //region.attr("title",region.node.id.split("|")[0]);
 
-    document.addEventListener('mousemove', fn, false);
-
-    function fn(e) {
-      for (var i = tooltip.length; i--;) {
-        tooltip[i].style.left = e.pageX + 'px';
-        tooltip[i].style.top = e.pageY + 'px';
-      }
-    }
+    region[0].dataset.toggle =  "tooltip";
+    //region[0].dataset.placement = "top";
+    region[0].setAttribute("title", region.node.id.split("|")[0]);
 
     region[0].addEventListener("mouseover", function () {
       region.animate(hoverStyle, animationSpeed);
@@ -64,5 +64,9 @@ for (var regionName in regions) {
 
     }, true);
 
+    console.log(region[0]);
+
   })(regions[regionName]);
 }
+
+$('[data-toggle="tooltip"]').tooltip();
