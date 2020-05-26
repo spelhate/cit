@@ -11,8 +11,11 @@
 // GENERIC
 @import 'generic/global';
 
+
+
 // COMPONENTS
 @import 'components/buttons';
+@import 'components/map';
 @import 'components/cards';
 @import 'components/alerts-badges';
 @import 'components/banner';
@@ -27,14 +30,14 @@
 @import 'components/jumbotron';
 @import 'components/key-figures';
 @import 'components/list-group';
-@import 'components/modals';
-@import 'components/navs';
 @import 'components/pagination';
-@import 'components/progress';
 @import 'components/search';
+@import 'components/navs';
+@import 'components/progress';
 @import 'components/selects';
 @import 'components/sidebar';
 @import 'components/videos';
+@import 'components/modals';
 
 // pages
 @import 'pages/home';

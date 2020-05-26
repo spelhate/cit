@@ -1,89 +1,112 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <meta charset="utf-8" />
+<meta charset="utf-8" />
 
-  <head>
-    <title>Fiches territoires</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="icon" href="img/rb_black.png" type="image/png" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
-    />
-    <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-      crossorigin="anonymous"
-    />
-    <!-- FONTAWESOME -->
-    <link rel='stylesheet' id='fontawesome-css'  href='https://use.fontawesome.com/releases/v5.11.2/css/all.css?ver=613370678' media='all' />
+<head>
+  <title>Fiches territoires</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="icon" href="img/rb_black.png" type="image/png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
+  <!-- FONTAWESOME -->
+  <link rel='stylesheet' id='fontawesome-css'
+    href='https://use.fontawesome.com/releases/v5.11.2/css/all.css?ver=613370678' media='all' />
 
-    <link href="./styles/main.css" rel="stylesheet" />
-  </head>
+  <link href="./styles/main.css" rel="stylesheet" />
+</head>
 
-  <body class="-home">
-    <header class="header clear row d-flex nav-down">
-      <div class="logo">
-        <a href="/index.html" aria-label="logo">
-          <img
-            src="https://www.bretagne.bzh/app/themes/bretagne/dist/img/logo.svg"
-            alt="Logo"
-            class="logo-img"
-          />
-        </a>
-      </div>
-      <div class="d-none d-lg-flex recherche align-self-center search-input from-header is-visible" id="search-desktop">
-        <input class="search-trigger" id="search" type="search" name="s" value="" autocomplete="off" placeholder="rechercher un EPCI...">
-        <input type="submit" value="" class="submit-trigger">
-        <button aria-label="Rechercher"><i class="ico_search"></i><span>Rechercher</span></button></form></div>
-    </header>
-
-    <div class="banner full-width">
-        <h1 class="light uppercase text-center">Visualisation des données des 59 EPCI</h1>
-        <div class="copyright">©Unsplash</div>
+<body class="-home">
+  <header class="header clear row d-flex nav-down">
+    <div class="logo">
+      <a href="/index.html" aria-label="logo">
+        <img src="https://www.bretagne.bzh/app/themes/bretagne/dist/img/logo.svg" alt="Logo" class="logo-img" />
+      </a>
     </div>
+    <div class="d-lg-flex recherche align-self-center search-input from-header is-visible" id="search-desktop">
+      <input class="search-trigger" id="search" type="search" name="s" value="" autocomplete="off"
+        placeholder="rechercher un EPCI...">
+      <input type="submit" value="" class="submit-trigger">
+      <button aria-label="Rechercher"><i class="ico_search"></i><span>Rechercher</span></button></form>
+    </div>
+  </header>
 
-    <div class="container -content">
+  <div id="map" class="d-none d-md-flex banner toggle_hidden full-width">
+  <!-- <div class="copyright">©Unsplash</div> -->
+  </div>
+
+  <div id="list-container" class="container -contentList d-md-block">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="uppercase text-center title toggled-margin">Liste des EPCI</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center flex">
+      <div id="epci_list" class="accordion col col-12 col-md-10 col-lg-8"></div>
+    </div>
+  </div>
+
+
+  <footer class="footer">
+    <div class="container">
       <div class="row">
-        <div class="col-lg-12">
-          <h2 class="uppercase text-center title">Liste des EPCI</h2>
-        </div>
-      </div>
-      <div class="row justify-content-center flex">
-        <div id="epci_list" class="accordion col col-12 col-md-10 col-lg-8"></div>
-      </div>
-    </div>
-
-
-    <footer class="footer">
-        <div class="container">
-          <div class="row">
-            <div class="bloc_logo col-lg-12 col-xl-3">
-              <div class="bg">
-                <a href="/styleguide" class="logo" aria-label="Page d'accueil">
-                  <img src="https://www.bretagne.bzh/app/themes/bretagne/dist/img/logo.svg" alt="Logo" class="logo-img">
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-12 col-xl-9">
-            </div>
+        <div class="bloc_logo col-lg-12 col-xl-3">
+          <div class="bg">
+            <a href="/styleguide" class="logo" aria-label="Page d'accueil">
+              <img src="https://www.bretagne.bzh/app/themes/bretagne/dist/img/logo.svg" alt="Logo" class="logo-img">
+            </a>
           </div>
         </div>
-      </footer>
+        <div class="col-lg-12 col-xl-9">
+        </div>
+      </div>
+    </div>
+  </footer>
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./script.js?v=1"></script>
-  </body>
-  
+  <!-- 
+      Fixed button to toggle map or list Start
+    -->
+  <button id="toggleButton" type="button" class="btn-fixed-bottom btn btn-primary btn-lg btn-block d-md-none list">Afficher la
+    carte</button>
+  <!-- 
+      Fixed button to toggle map or list End
+    -->
+
+  <!-- 
+        Bootstrap Modal Start
+     -->
+  <div class="modal fade" id="epci_modal" tabindex="-1" role="dialog" aria-labelledby="epci_modal_label"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="epci_modal_label"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- 
+        Bootstrap Modal End
+     -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"></script>
+  <script src="data.js"></script>
+  <script src="map.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>

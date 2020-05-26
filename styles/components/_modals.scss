@@ -2,9 +2,9 @@
 /**************** HANDLES MODALS ******************/
 /**************************************************/
 .modal {
-  display: block;
-  position: static;
-
+  &:not(#epci_modal){
+    position: static;
+  }
   .modal-content {
     padding: 70px 25px 25px;
     border: none;
