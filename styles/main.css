@@ -640,8 +640,26 @@ input:focus {
   border-radius: 0;
 }
 
+#map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f7f7f7;
+  border-radius: 6px;
+  margin-top: 100px;
+  padding: 0 !important;
+}
+
 #map svg {
   z-index: 10;
+  margin: 0 auto;
+  padding-top: 100px;
 }
 
 /**************************************************/
@@ -3429,18 +3447,27 @@ input[type='checkbox'] ~ .form-check-label:before {
   opacity: 1;
 }
 
+.-home .tooltip {
+  font-size: 16px !important;
+}
+
 .-home .title {
   margin-top: 4.2rem;
 }
 
 .-home .title.toggled-margin {
-  margin-top: 80px;
+  margin-top: 3.2rem;
   margin-bottom: 0 !important;
+}
+
+.-home #epci_modal .modal-header .modal-title {
+  font-size: 2rem;
 }
 
 .-home #epci_modal a {
   display: block;
   margin-top: 1.6rem;
+  font-size: 1.4rem;
 }
 
 .-home #epci_modal a:first-child {
@@ -3476,9 +3503,5 @@ input[type='checkbox'] ~ .form-check-label:before {
 
 .-home .-contentList #epci_list .card .card-body a:first-child {
   margin-top: 0px;
-}
-
-svg {
-  margin-top: 75px;
 }
 /*# sourceMappingURL=main.css.map */
