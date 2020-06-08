@@ -3504,6 +3504,7 @@ input[type='checkbox'] ~ .form-check-label:before {
 .-home .-contentList #epci_list .card .card-body a:first-child {
   margin-top: 0px;
 }
+
 svg {
   margin-top: 75px;
 }
