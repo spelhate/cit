@@ -7,13 +7,14 @@ $(document).ready(function () {
     data = _data
     $.get('template.tpl', function (_html) {
       template = _html
-      data.forEach(function (item) {
+      html = Mustache.render(template, _data);
+      /*data.forEach(function (item) {
         var tpl = template
           .replace(/{{dataid}}/g, item.dataid)
           .replace(/{{label}}/g, item.label)
         html.push(tpl)
-      })
-      $('#epci_list').append(html.join(''))
+      })*/
+      $('#epci_list').append(html);
     })
   })
 
