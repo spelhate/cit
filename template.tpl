@@ -15,9 +15,9 @@
                 <a target="_blank" href="https://kartenn.region-bretagne.fr/fichenn/epci_communes/{{dataid}}">L'EPCI et les
                     communes</a>
                 <a target="_blank" href="https://kartenn.region-bretagne.fr/fichenn/epci_jeunesse/{{dataid}}">Fiche jeunesse</a>
-                {{#epci}}
+                {{#lycee}}
                     <a target="_blank" href="https://kartenn.region-bretagne.fr/fichenn/epci/{{dataid}}">Fiche lycées</a>
-                {{/epci}}
+                {{/lycee}}
                 {{#epci_qpv}}
                     <a target="_blank" href="https://kartenn.region-bretagne.fr/fichenn/epci_qpv/{{dataid}}">Fiche quartiers prioritaires de la ville</a>
                 {{/epci_qpv}}
