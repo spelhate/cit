@@ -65,11 +65,13 @@ for (var regionName in regions) {
       function (e) {
         var id = unescape(region.node.id).split('|')
         var code_geo = id[1]
-        var report_list = $('#epci_' + code_geo).html()
-        var title = $('#heading-' + code_geo).text()
-        $('#epci_modal_label').text(title)
-        $('#epci_modal .modal-body').html(report_list)
-        $('#epci_modal').modal('show')
+        if (code_geo !== 'null') {
+          var report_list = $('#epci_' + code_geo).html();
+          var title = $('#heading-' + code_geo).text();
+          $('#epci_modal_label').text(title);
+          $('#epci_modal .modal-body').html(report_list);
+          $('#epci_modal').modal('show');
+        }
       },
       true
     )

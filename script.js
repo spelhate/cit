@@ -16,8 +16,6 @@ $(document).ready(function () {
         });
       });
     }
-
-    console.log(_data);
     $.get('template.tpl', function (_html) {
       template = _html
       html = Mustache.render(template, _data);
