@@ -15,8 +15,12 @@
                 <a target="_blank" href="https://kartenn.region-bretagne.fr/fichenn/epci_communes/{{dataid}}">L'EPCI et les
                     communes</a>
                 <a target="_blank" href="https://kartenn.region-bretagne.fr/fichenn/epci_jeunesse/{{dataid}}">Fiche jeunesse</a>
-                <a target="_blank" href="https://kartenn.region-bretagne.fr/fichenn/epci/{{dataid}}">Fiche lycées</a>
-                <a target="_blank" href="https://kartenn.region-bretagne.fr/fichenn/epci_qpv/{{dataid}}">Fiche quartiers prioritaires de la ville</a>
+                {{#epci}}
+                    <a target="_blank" href="https://kartenn.region-bretagne.fr/fichenn/epci/{{dataid}}">Fiche lycées</a>
+                {{/epci}}
+                {{#epci_qpv}}
+                    <a target="_blank" href="https://kartenn.region-bretagne.fr/fichenn/epci_qpv/{{dataid}}">Fiche quartiers prioritaires de la ville</a>
+                {{/epci_qpv}}
                 <a target="_blank" href="https://kartenn.region-bretagne.fr/ws/breizhcop/engagements.php?siren={{dataid}}" >L’engagement du territoire dans la Breizh Cop </a></div>
             </div>
         </div>

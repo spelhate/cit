@@ -5,15 +5,22 @@ $(document).ready(function () {
   var html = []
   $.getJSON('data.json', function (_data) {
     data = _data
+    if (_data.fiches) {
+      _data.fiches.forEach(function(fiche){
+        fiche.filter.forEach(function(dataid) {
+          let test = _data.epci.filter(epci => epci.dataid === dataid);
+          if (test.length === 1) {
+              let epci = test[0];
+              epci[fiche.id] = true;
+          }
+        });
+      });
+    }
+
+    console.log(_data);
     $.get('template.tpl', function (_html) {
       template = _html
       html = Mustache.render(template, _data);
-      /*data.forEach(function (item) {
-        var tpl = template
-          .replace(/{{dataid}}/g, item.dataid)
-          .replace(/{{label}}/g, item.label)
-        html.push(tpl)
-      })*/
       $('#epci_list').append(html);
     })
   })
