@@ -33,9 +33,15 @@
       display: none;
     }
     #epci_list {
+      #searchFeedback{
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0 0 ;
+        text-align: center;
+      }
       .card {
         margin: 30px 0 0;
-
+        display: none;
         .card-body {
           display: flex;
           flex-direction: column;

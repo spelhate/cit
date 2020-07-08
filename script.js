@@ -3,6 +3,7 @@ $(document).ready(function () {
   var data = []
   var template = ''
   var html = []
+  var searchResults = 0
   $.getJSON('data.json', function (_data) {
     data = _data
     if (_data.fiches) {
@@ -32,17 +33,29 @@ $(document).ready(function () {
   $('#search').on('keyup', function () {
     $('.collapse').collapse('hide')
     var value = $(this).val().toLowerCase()
+    var empty = value.length > 0
     $('#epci_list .card').filter(function () {
       var txt = $(this).attr('data-filter').toLowerCase()
       var test = txt.indexOf(value) > -1
-      if (test) {
-        $(this).addClass('selected')
-        $(this).show()
+      if (test && empty) {
+        if(!$(this).hasClass('selected')){
+          searchResults++
+          $(this).show()
+          $(this).addClass('selected')
+        } 
       } else {
-        $(this).removeClass('selected')
-        $(this).hide()
+        if($(this).hasClass('selected')){
+          $(this).removeClass('selected')
+          $(this).hide()
+          searchResults--
+        }
+        
       }
     })
+    if(searchResults>0)
+      $("#searchFeedback").hide()
+    else
+      $("#searchFeedback").show()
   })
   // Toggle map or list
   $('#toggleButton').on('click', function () {

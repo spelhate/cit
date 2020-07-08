@@ -3482,8 +3482,21 @@ input[type='checkbox'] ~ .form-check-label:before {
   display: none;
 }
 
+.-home .-contentList #epci_list #searchFeedback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 30px 0 0;
+  text-align: center;
+}
+
 .-home .-contentList #epci_list .card {
   margin: 30px 0 0;
+  display: none;
 }
 
 .-home .-contentList #epci_list .card .card-body {
