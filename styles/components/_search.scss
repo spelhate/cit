@@ -331,3 +331,12 @@
     }
   }
 }
+#search{
+  &::-webkit-search-cancel-button{
+    position:relative;
+    right:15px;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}

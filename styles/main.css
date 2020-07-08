@@ -2790,6 +2790,15 @@ input[type='checkbox'] ~ .form-check-label:before {
   }
 }
 
+#search::-webkit-search-cancel-button {
+  position: relative;
+  right: 15px;
+}
+
+#search::-webkit-search-cancel-button:hover {
+  cursor: pointer;
+}
+
 /**************************************************/
 /*************** HANDLES NAVS *********************/
 /**************************************************/

@@ -30,7 +30,7 @@ $(document).ready(function () {
     })
   })
 
-  $('#search').on('keyup', function () {
+  $('#search').on('keyup search', function () {
     $('.collapse').collapse('hide')
     var value = $(this).val().toLowerCase()
     var empty = value.length > 0
