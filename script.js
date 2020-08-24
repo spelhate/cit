@@ -1,6 +1,5 @@
 $(document).ready(function () {
   // Init List and Search
-  var data = []
   var template = ''
   var html = []
   var searchResults = 0

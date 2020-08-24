@@ -25,6 +25,12 @@
         <img src="https://www.bretagne.bzh/app/themes/bretagne/dist/img/logo.svg" alt="Logo" class="logo-img" />
       </a>
     </div>
+    <div class="d-lg-flex recherche align-self-center search-input from-header is-visible" id="search-desktop">
+      <input class="search-trigger" id="search" type="search" name="s" value="" autocomplete="off"
+        placeholder="rechercher un EPCI...">
+      <input type="submit" value="" class="submit-trigger">
+      <button aria-label="Rechercher"><i class="ico_search"></i><span>Rechercher</span></button></form>
+    </div>
   </header>
 
   <div id="map" class="d-none d-md-flex container toggle_hidden">
@@ -37,15 +43,8 @@
       </div>
     </div>
     <div class="row justify-content-center flex search-list">
-      <div class="d-lg-flex recherche align-self-center search-input from-header is-visible col-12"
-          id="search-desktop">
-          <input class="search-trigger" id="search" type="search" name="s" value="" autocomplete="off"
-            placeholder="rechercher un EPCI...">
-          <input type="submit" value="" class="submit-trigger">
-          <button aria-label="Rechercher"><i class="ico_search"></i><span>Rechercher</span></button></form>
-      </div>
       <div id="epci_list" class="accordion col col-12 col-md-10 col-lg-8">
-        <h4 id="searchFeedback" style="display:none">Aucun élément ne correspond à la recherche</h4>
+        <h4 id="searchFeedback">Aucun élément ne correspond à la recherche</h4>
       </div>
     </div>
   </div>

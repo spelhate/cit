@@ -1,5 +1,5 @@
 ﻿var MAP_WIDTH = 800
-var MAP_HEIGHT = 700
+var MAP_HEIGHT = 600
 
 var mapContainer = document.getElementById('map')
 // Create the canvas for the map
