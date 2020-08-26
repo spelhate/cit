@@ -640,28 +640,6 @@ input:focus {
   border-radius: 0;
 }
 
-#map {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #f7f7f7;
-  border-radius: 6px;
-  margin-top: 100px;
-  padding: 0 !important;
-}
-
-#map svg {
-  z-index: 10;
-  margin: 0 auto;
-  padding-top: 100px;
-}
-
 /**************************************************/
 /***************** HANDLES CARDS ******************/
 /**************************************************/
@@ -2137,12 +2115,6 @@ input[type='checkbox'] ~ .form-check-label:before {
           transform: translate(50%, -50%) rotate(45deg);
 }
 
-.header .recherche {
-  width: 40%;
-  max-width: 325px;
-  position: relative;
-  margin: 4px 5px 4px 105px;
-}
 
 .header .recherche .search-trigger {
   border: none;
@@ -2189,7 +2161,7 @@ input[type='checkbox'] ~ .form-check-label:before {
   cursor: pointer;
   z-index: 10;
   position: absolute;
-  right: 1.5rem;
+  right: 0.5em;
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -3531,12 +3503,6 @@ svg {
   margin-top: 75px;
 }
 
-.recherche {
-  width: 40%;
-  max-width: 325px;
-  position: relative;
-  margin-top: 20px;
-}
 
 .recherche .search-trigger {
   border: solid 2px black;
@@ -3587,7 +3553,7 @@ svg {
   cursor: pointer;
   z-index: 10;
   position: absolute;
-  right: 1.5rem;
+  right: 0.5em;
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);

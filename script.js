@@ -32,29 +32,35 @@ $(document).ready(function () {
   $('#search').on('keyup search', function () {
     $('.collapse').collapse('hide')
     var value = $(this).val().toLowerCase()
-    var empty = value.length > 0
+    var notempty = value.length > 0
     $('#epci_list .card').filter(function () {
       var txt = $(this).attr('data-filter').toLowerCase()
       var test = txt.indexOf(value) > -1
-      if (test && empty) {
+      if (test && notempty) {
         if(!$(this).hasClass('selected')){
           searchResults++
           $(this).show()
           $(this).addClass('selected')
-        } 
+        }
       } else {
         if($(this).hasClass('selected')){
           $(this).removeClass('selected')
           $(this).hide()
           searchResults--
         }
-        
+
       }
     })
-    if(searchResults>0)
-      $("#searchFeedback").hide()
-    else
-      $("#searchFeedback").show()
+    if(searchResults>0) {
+      $("#searchFeedback2").hide();
+      $("#searchIndication").hide();
+    } else if (searchResults === 0 && notempty) {
+      $("#searchFeedback2").show();
+      $("#searchIndication").hide();
+    } else {
+      $("#searchIndication").show();
+      $("#searchFeedback2").hide();
+    }
   })
   // Toggle map or list
   $('#toggleButton').on('click', function () {
