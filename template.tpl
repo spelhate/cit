@@ -9,15 +9,15 @@
 
         <div id="epci_{{dataid}}" class="collapse" aria-labelledby="heading-{{dataid}}">
             <div class="card-body">
-                <a target="_blank" href="https://kartenn.region-bretagne.fr/fichenn/epci_chiffres_cles/{{dataid}}">Les chiffres clés
-                    du territoire</a>
+                <div class="card"><a class="card-header" target="_blank" href="https://kartenn.region-bretagne.fr/fichenn/epci_chiffres_cles/{{dataid}}">Les chiffres clés
+                    du territoire</a></div>
 
 
                 <div class="card">
                     <div class="card-header collapsed" id="heading-{{dataid}}@1" data-toggle="collapse"
                         data-target="#territory_{{dataid}}"
                         aria-expanded="false" aria-controls="{{dataid}}">
-                        <h3 class="mb-0">Connaitre le territoire<span class="badge badge-dark">4</span></h3>
+                        <h5 class="mb-0">Connaitre le territoire<span class="badge badge-dark">4</span></h5>
                     </div>
 
                     <div id="territory_{{dataid}}" class="collapse" aria-labelledby="heading-{{dataid}}@1">
@@ -41,7 +41,7 @@
 
 
 
-                <a target="_blank" href="https://kartenn.region-bretagne.fr/ws/breizhcop/engagements.php?siren={{dataid}}" >L’engagement du territoire dans la Breizh Cop </a></div>
+                <div class="card"><a class="card-header" target="_blank" href="https://kartenn.region-bretagne.fr/ws/breizhcop/engagements.php?siren={{dataid}}" >L’engagement du territoire dans la Breizh Cop </a></div></div>
             </div>
         </div>
     </div>

@@ -41,3 +41,10 @@
     margin: 30px 0 0;
     text-align: center;
 }
+
+
+.card .badge-dark {
+    right: 10px;
+    float: right;
+    line-height: 1.2rem;
+}
