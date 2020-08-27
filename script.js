@@ -33,7 +33,7 @@ $(document).ready(function () {
     $('.collapse').collapse('hide')
     var value = $(this).val().toLowerCase()
     var notempty = value.length > 0
-    $('#epci_list .card').filter(function () {
+    $('#epci_list .main-content').filter(function () {
       var txt = $(this).attr('data-filter').toLowerCase()
       var test = txt.indexOf(value) > -1
       if (test && notempty) {
