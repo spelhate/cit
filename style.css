@@ -62,3 +62,7 @@
   float: right;
   padding-right: 9px;
 }
+
+.fiche-level-2.disabled {
+  font-style: italic;
+}

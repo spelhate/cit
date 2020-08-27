@@ -22,15 +22,22 @@
 
                     <div id="territory_{{dataid}}" class="collapse" aria-labelledby="heading-{{dataid}}@1">
                         <div class="fiche-list card-body">
+                            <a class="fiche-level-2 disabled">Carte</a>
+
                             <a class="fiche-level-2" target="_blank" href="https://kartenn.region-bretagne.fr/fichenn/epci_population/{{dataid}}">La population du
                                 territoire</a>
-                            <a class="fiche-level-2" target="_blank" href="https://kartenn.region-bretagne.fr/fichenn/epci_communes/{{dataid}}">L'EPCI et les
-                                communes</a>
+
                             <a class="fiche-level-2" target="_blank" href="https://kartenn.region-bretagne.fr/fichenn/epci_jeunesse/{{dataid}}">Fiche jeunesse</a>
 
                             {{#epci_qpv}}
                                 <a class="fiche-level-2" target="_blank" href="https://kartenn.region-bretagne.fr/fichenn/epci_qpv/{{dataid}}">Fiche quartiers prioritaires de la ville</a>
                             {{/epci_qpv}}
+
+                            <a class="fiche-level-2" target="_blank" href="https://kartenn.region-bretagne.fr/fichenn/epci_communes/{{dataid}}">L'EPCI et les
+                                communes</a>
+
+                            <a class="fiche-level-2 disabled">Les schémas</a>
+
 
                         </div>
                     </div>
@@ -45,9 +52,28 @@
 
                     <div id="action_{{dataid}}" class="collapse" aria-labelledby="heading-{{dataid}}@2">
                         <div class="fiche-list card-body">
+
+                            <a class="fiche-level-2 disabled">L'implantation de la région</a>
+
                             {{#lycee}}
-                                <a class="fiche-level-2" target="_blank" href="https://kartenn.region-bretagne.fr/fichenn/epci/{{dataid}}">Fiche lycées</a>
+                                <a class="fiche-level-2" target="_blank" href="https://kartenn.region-bretagne.fr/fichenn/epci/{{dataid}}">Fiche lycées - éducation</a>
                             {{/lycee}}
+
+                            <a class="fiche-level-2 disabled">Culture – langues régionales – patrimoine - sports</a>
+
+                            <a class="fiche-level-2 disabled">Mobilités</a>
+
+                            <a class="fiche-level-2 disabled">Economie – emploi – formation </a>
+
+                            <a class="fiche-level-2 disabled">Environnement</a>
+
+                            <a class="fiche-level-2 disabled">Politique territoriale</a>
+
+                            <a class="fiche-level-2 disabled">Numérique</a>
+
+                            <a class="fiche-level-2 disabled">Europe</a>
+
+
                         </div>
                     </div>
                 </div>
