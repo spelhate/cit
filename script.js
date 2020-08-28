@@ -90,7 +90,7 @@ $(document).ready(function () {
     }
   })
 
-  $('#epci-modal').on('show.bs.modal', function (e) {
+  $('#epci_modal').on('show.bs.modal', function (e) {
     $(".tooltip").hide();
   })
 })
