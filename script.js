@@ -20,6 +20,11 @@ $(document).ready(function () {
       template = _html
       html = Mustache.render(template, _data);
       $('#epci_list').append(html);
+      //update badge counters
+      document.querySelectorAll(".fiche-list").forEach(function(item) {
+        let counter = item.querySelectorAll(".fiche-level-2.enabled").length;
+        item.closest(".card").querySelector("span.counter").textContent = counter;
+      });
     })
   })
 
