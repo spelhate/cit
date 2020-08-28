@@ -89,4 +89,8 @@ $(document).ready(function () {
       button.text('Afficher la carte')
     }
   })
+
+  $('#epci-modal').on('show.bs.modal', function (e) {
+    $(".tooltip").hide();
+  })
 })
