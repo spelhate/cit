@@ -92,3 +92,24 @@
   padding-bottom: 5px;
   padding-top: 5px;
 }
+
+.map-feature {
+  fill: #FFFFFF;
+  stroke: #0094AB;
+  stroke-width: 1;
+  stroke-linejoin: round;
+  cursor: pointer;
+  transition: fill .4s ease;
+}
+
+.map-feature:hover {
+  fill: #0094AB
+}
+
+.map-feature.selected {
+  fill: hsl(0, 67%, 44%);
+}
+
+.map-feature.filtered {
+  fill: hsl(123, 53%, 36%);
+}
