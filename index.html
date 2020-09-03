@@ -35,23 +35,27 @@
     </div>
   </header>
 
-  <div id="map" class="d-none d-md-flex container toggle_hidden">
-  </div>
+  <main>
 
-  <div id="list-container" class="container -contentList d-md-block">
-    <div class="row">
-      <div class="col-lg-12">
-        <h2 class="uppercase text-center title toggled-margin">Liste des EPCI</h2>
+    <div id="list-container" class="container -contentList d-md-block">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="uppercase text-center title toggled-margin">Liste des EPCI</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center flex search-list">
+        <div id="epci_list" class="accordion col col-12 col-md-10 col-lg-8">
+          <h4 id="searchFeedback2" style="display:none;">Aucun élément ne correspond à la recherche</h4>
+          <h4 id="searchIndication">Utilisez la zone de recherche ou la carte pour sélectioner un EPCI</h4>
+        </div>
       </div>
     </div>
-    <div class="row justify-content-center flex search-list">
-      <div id="epci_list" class="accordion col col-12 col-md-10 col-lg-8">
-        <h4 id="searchFeedback2" style="display:none;">Aucun élément ne correspond à la recherche</h4>
-        <h4 id="searchIndication">Utilisez la zone de recherche ou la carte pour sélectioner un EPCI</h4>
-      </div>
+    
+    <div id="map" class="d-none d-md-flex container toggle_hidden">
     </div>
-  </div>
 
+    
+  </main>
 
   <footer class="footer">
     <div class="container">

@@ -1,3 +1,8 @@
+main{
+  margin-top:90px;
+
+}
+
 #map {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -11,6 +16,7 @@
     background: #f7f7f7;
     border-radius: 6px;
     /*padding: 0 !important;*/
+    margin-top:30px;
   }
 
   #map svg {
@@ -89,8 +95,12 @@
 }
 
 .card.card-theme {
-  padding-bottom: 5px;
-  padding-top: 5px;
+  padding:0;
+  margin:15px 0;
+}
+
+.card-header{
+  border:none;
 }
 
 .map-feature {
@@ -103,13 +113,44 @@
 }
 
 .map-feature:hover {
-  fill: #0094AB
+  fill: #0094AB;
 }
 
 .map-feature.selected {
-  fill: hsl(0, 67%, 44%);
+  fill: #a8ccd2;
 }
 
 .map-feature.filtered {
-  fill: hsl(123, 53%, 36%);
+  fill: #37636b;
+}
+
+.modal .modal-content{
+  padding:30px;
+  padding-bottom:15px;
+}
+
+.modal .modal-header{
+  margin-bottom:30px;
+}
+
+.modal .modal-title{
+  margin:0 auto;
+  max-width:400px;
+}
+
+.card-body{
+  padding:0;
+  margin:0
+}
+
+.card-body .card-theme .card-body{
+  padding:15px;
+}
+
+.-home .title.toggled-margin{
+  margin-top:30px;
+}
+
+#searchIndication{
+  margin-bottom:30px;
 }
