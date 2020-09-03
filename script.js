@@ -84,9 +84,13 @@ $(document).ready(function () {
       $("#searchFeedback2").hide();
     }
     // clear map filter
+    document.querySelectorAll(".map-feature.selected").forEach(function(item) {
+      item.classList.toggle("selected");
+
+    });
+
     document.querySelectorAll(".map-feature.filtered").forEach(function(item) {
       item.classList.toggle("filtered");
-      item.classList.remove("filtered");
 
     });
 
