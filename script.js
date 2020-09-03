@@ -86,6 +86,8 @@ $(document).ready(function () {
     // clear map filter
     document.querySelectorAll(".map-feature.filtered").forEach(function(item) {
       item.classList.toggle("filtered");
+      item.classList.remove("filtered");
+
     });
 
     //update map
