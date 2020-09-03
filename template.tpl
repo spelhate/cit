@@ -1,6 +1,6 @@
 
 {{#epci}}
-    <div class="card main-content" data-filter="{{label}}">
+    <div class="card main-content" data-codegeo="{{dataid}}" data-filter="{{label}}">
         <div class="card-header collapsed" id="heading-{{dataid}}" data-toggle="collapse"
             data-target="#epci_{{dataid}}"
             aria-expanded="false" aria-controls="{{dataid}}">

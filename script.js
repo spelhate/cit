@@ -25,6 +25,21 @@ $(document).ready(function () {
         let counter = item.querySelectorAll(".fiche-level-2.enabled").length;
         item.closest(".card").querySelector("span.counter").textContent = counter;
       });
+
+      $('.main-content .collapse').on('show.bs.collapse', function (e) {
+        let codegeo = e.currentTarget.parentElement.dataset.codegeo;
+        // clear map filter
+        document.querySelectorAll(".map-feature.selected").forEach(function(item) {
+          item.classList.toggle("selected");
+        });
+        // Update map
+        let element = document.getElementById("feature-" + codegeo);
+        if (element) {
+          element.classList.toggle("filtered");
+          element.classList.toggle("selected");
+        }
+      });
+
     })
   })
 
@@ -33,6 +48,8 @@ $(document).ready(function () {
       boxShadow: '0px 3px 6px rgba(0,0,0, 0.16)',
     })
   })
+
+
 
   $('#search').on('keyup search', function () {
     $('.collapse').collapse('hide')
@@ -66,6 +83,20 @@ $(document).ready(function () {
       $("#searchIndication").show();
       $("#searchFeedback2").hide();
     }
+    // clear map filter
+    document.querySelectorAll(".map-feature.filtered").forEach(function(item) {
+      item.classList.toggle("filtered");
+    });
+
+    //update map
+    document.querySelectorAll(".main-content.selected").forEach(function(item) {
+      let element = document.getElementById("feature-" + item.dataset.codegeo);
+      if (element) {
+        element.classList.toggle("filtered");
+      }
+
+    });
+
   })
   // Toggle map or list
   $('#toggleButton').on('click', function () {
