@@ -130,4 +130,9 @@ $(document).ready(function () {
   $('#epci_modal').on('show.bs.modal', function (e) {
     $(".tooltip").hide();
   })
+
+  $('#epci_modal').on('show.bs.collapse','.collapse', function() {
+    $('#epci_modal .card-theme').find('.collapse.show').collapse('hide');
+  });
+
 })
