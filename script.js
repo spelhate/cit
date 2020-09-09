@@ -40,6 +40,16 @@ $(document).ready(function () {
         }
       });
 
+      document.querySelectorAll('.main-content').forEach(item => {
+        item.addEventListener('click', event => {
+          let title = event.currentTarget.querySelector('.card-header').textContent;
+          let report_list = event.currentTarget.querySelector('.content-list').cloneNode(true);
+          $('#epci_modal_label').text(title);
+          $('#epci_modal .modal-body').html(report_list);
+          $('#epci_modal').modal('show');
+        })
+      })
+
     })
   })
 

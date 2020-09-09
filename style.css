@@ -154,3 +154,7 @@ main{
 #searchIndication{
   margin-bottom:30px;
 }
+
+.main-content .content-list {
+  display: none;
+}

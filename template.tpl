@@ -1,13 +1,11 @@
 
 {{#epci}}
     <div class="card main-content" data-codegeo="{{dataid}}" data-filter="{{label}}">
-        <div class="card-header collapsed" id="heading-{{dataid}}" data-toggle="collapse"
-            data-target="#epci_{{dataid}}"
-            aria-expanded="false" aria-controls="{{dataid}}">
+        <div class="card-header" id="heading-{{dataid}}">
             <h3 class="mb-0">{{label}}</h3>
         </div>
 
-        <div id="epci_{{dataid}}" class="collapse" aria-labelledby="heading-{{dataid}}">
+        <div id="epci_{{dataid}}" class="content-list">
             <div class="card-body">
                 <div class="card"><a class="fiche-level-1 card-header" target="_blank" href="https://kartenn.region-bretagne.fr/fichenn/epci_chiffres_cles/{{dataid}}">Les chiffres clés
                     du territoire<span><i class="fas fa-chart-line"/></span></a>
