@@ -1,7 +1,8 @@
-﻿var MAP_WIDTH = 800
-var MAP_HEIGHT = 600
+﻿var MAP_WIDTH = 800 
+var MAP_HEIGHT = 500
 
 var mapContainer = document.getElementById('map');
+
 // Create the canvas for the map
 var map = new Raphael(mapContainer, MAP_WIDTH, MAP_HEIGHT);
 

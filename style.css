@@ -1,6 +1,21 @@
-main{
-  margin-top:90px;
 
+ html, body {
+  height: 100%;
+}
+body {
+  min-height:100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main{
+  flex: 1 0 auto!important;
+
+}
+
+.footer {
+  z-index:5;
+  flex-shrink: 0;
 }
 
 #map {
@@ -15,25 +30,25 @@ main{
     align-items: center;
     background: #f7f7f7;
     border-radius: 6px;
-    /*padding: 0 !important;*/
-    margin-top:30px;
+    box-shadow:0 0 10px #aaa;
+    margin-bottom:50px;
+
   }
 
   #map svg {
-    z-index: 10;
-    margin-top: 75px;
+    /*z-index: 10;*/
+    margin-top: 25px;
   }
 
-  @media only screen and (max-width: 767px) {
-    #map svg {
-        margin-top: 150px;
-      }
+  #map svg{
+    height:auto!important
   }
+
 
   .recherche {
     position: relative;
     margin-left: auto;
-    margin-right: auto;
+    margin-right:30px;
   }
 
   .-home .-contentList #epci_list #searchFeedback2, #searchIndication {
@@ -48,6 +63,38 @@ main{
     text-align: center;
 }
 
+#epci_list_container{
+  position:fixed;
+  background-color:white;
+  border-left:1px solid #ddd;
+  right:0;
+  top:100px;
+  display:none;
+  transition: 0.5s;
+  overflow-y:scroll;;
+  height:100%;
+
+
+}
+
+#epci_list_container #epci_list{
+  overflow-y:scroll;
+  height:100%;
+}
+
+main,
+#epci_list_container{
+  transition: 1s;
+}
+
+#epci_list_container .main-content :hover{ 
+  cursor:pointer;
+  background-color:#ddd;
+}
+
+#epci_list_container h3{
+  margin-bottom:15px;
+}
 
 .card .badge-dark {
     right: 10px;
@@ -112,16 +159,16 @@ main{
   transition: fill .4s ease;
 }
 
-.map-feature:hover {
-  fill: #0094AB;
-}
-
-.map-feature.selected {
-  fill: #a8ccd2;
+.map-feature:hover {  
+  fill: #00a6c0;
 }
 
 .map-feature.filtered {
-  fill: #37636b;
+  fill: #9ecfd8;
+}
+
+.map-feature.selected {
+  fill: #295a63;
 }
 
 .modal .modal-content{
@@ -148,13 +195,73 @@ main{
 }
 
 .-home .title.toggled-margin{
-  margin-top:30px;
+  margin-top:10px;
 }
 
 #searchIndication{
-  margin-bottom:30px;
+  margin:20px;
 }
 
 .main-content .content-list {
   display: none;
+  margin-bottom:10px;
 }
+
+.container{
+  width:auto;
+}
+
+.btn-fixed-bottom{
+  font-size:13px;
+  border-radius:15px;
+  width:60%;
+  left:50%;
+  transform:translateX(-50%);
+  box-shadow:0 0 5px #333;
+  bottom:15px;
+}
+
+.close{
+  font-size:30px;
+  font-weight:700;
+  margin-right:15px;
+}
+
+.completeList{
+  padding:15px 30px;
+}
+
+.btn-primary,
+.btn-primary:not(:disabled):not(.disabled).active, 
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle,
+.btn-primary:hover{
+  background-color:#aaa;
+}
+
+.btn-primary:focus{
+  background-color:#295a63;;
+
+}
+
+/*--Media queries--*/
+
+@media only screen and (max-width: 767px) {
+  /*#map svg {
+      margin-top: 150px;
+    }*/
+  #map{
+    margin:20px auto;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  #map{
+    width:90%;
+  }
+  .recherche{
+    margin-right:0px;
+  }
+}
+
+

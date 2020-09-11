@@ -50,9 +50,22 @@ $(document).ready(function () {
         })
       })
 
+      document.querySelectorAll(".main-content").forEach(function(element){
+        element.addEventListener("mouseover", function (e) {
+         let code_geo = e.currentTarget.dataset.codegeo;
+         let mapFeature = document.getElementById("feature-" + code_geo);
+           mapFeature.classList.add("selected");
+       })
+       element.addEventListener("mouseout", function (e) {
+         let code_geo = e.currentTarget.dataset.codegeo;
+         let mapFeature = document.getElementById("feature-" + code_geo);
+         mapFeature.classList.remove("selected");
+       })
+     });
+
     })
   })
-
+  
   $('#epci_list .card').click(function () {
     $(this).css({
       boxShadow: '0px 3px 6px rgba(0,0,0, 0.16)',
@@ -85,14 +98,25 @@ $(document).ready(function () {
     })
     if(searchResults>0) {
       $("#searchFeedback2").hide();
-      $("#searchIndication").hide();
+      $("#epci_list_container").show();
+      $("#epci_list_container").addClass('col-md-5 col-11')
+      $("main").addClass('col-md-7 col-xs-12')
+      $("#toggleButton").hide();
     } else if (searchResults === 0 && notempty) {
       $("#searchFeedback2").show();
-      $("#searchIndication").hide();
+      $("#epci_list_container").hide();
+      $("#toggleButton").show();
     } else {
-      $("#searchIndication").show();
       $("#searchFeedback2").hide();
+      $("#epci_list_container").hide();
+      $("#epci_list_container").removeClass('col-md-5 col-11')
+      $("main").removeClass('col-md-7 col-xs-12')
+      $("#toggleButton").show();
     }
+
+    
+      
+
     // clear map filter
     document.querySelectorAll(".map-feature.selected").forEach(function(item) {
       item.classList.toggle("selected");
@@ -113,9 +137,22 @@ $(document).ready(function () {
 
     });
 
-  })
-  // Toggle map or list
+})
+
+// X close search results and resets map size
+$("#hideSearchResults").click(function(){
+  $("#epci_list_container").hide();
+  $("#epci_list_container").removeClass('col-md-5 col-11')
+  $("main").removeClass('col-md-7 col-sm-12')
+});
+
   $('#toggleButton').on('click', function () {
+     $('#epci_list_container').toggle();
+     $('#epci_list_container').addClass("completeList");
+  });
+
+  // Toggle map or list
+ /*$('#toggleButton').on('click', function () {
     var carte = $('.toggle_hidden')
     var list_container = document.getElementById('list-container')
     if (carte.hasClass('d-none')) {
@@ -135,7 +172,9 @@ $(document).ready(function () {
       button.toggleClass('list')
       button.text('Afficher la carte')
     }
-  })
+  })*/
+
+
 
   $('#epci_modal').on('show.bs.modal', function (e) {
     $(".tooltip").hide();

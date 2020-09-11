@@ -41,21 +41,27 @@
       <div class="row">
         <div class="col-lg-12">
           <h2 class="uppercase text-center title toggled-margin">Liste des EPCI</h2>
-        </div>
-      </div>
-      <div class="row justify-content-center flex search-list">
-        <div id="epci_list" class="accordion col col-12 col-md-10 col-lg-8">
-          <h4 id="searchFeedback2" style="display:none;">Aucun élément ne correspond à la recherche</h4>
           <h4 id="searchIndication">Utilisez la zone de recherche ou la carte pour sélectioner un EPCI</h4>
         </div>
       </div>
     </div>
     
-    <div id="map" class="d-none d-md-flex container toggle_hidden">
+    <div id="map" class="d-md-flex container toggle_hidden">
     </div>
 
     
   </main>
+
+  <div class="row justify-content-center flex search-list col-0 " id="epci_list_container">
+    <button type="button" class="close" aria-label="Close" id="hideSearchResults">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <h3>Les résultats correspondant à votre recherche:</h3>
+    
+    <div id="epci_list" class="accordion col col-12 col-md-12">
+      <h4 id="searchFeedback2" style="display:none;">Aucun élément ne correspond à la recherche</h4>
+    </div>
+  </div>
 
   <footer class="footer">
     <div class="container">
@@ -77,7 +83,7 @@
       Fixed button to toggle map or list Start
     -->
   <button id="toggleButton" type="button" class="btn-fixed-bottom btn btn-primary btn-lg btn-block d-md-none list">Afficher la
-    carte</button>
+    Liste</button>
   <!--
       Fixed button to toggle map or list End
     -->

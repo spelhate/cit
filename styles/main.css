@@ -250,8 +250,8 @@ input:focus {
   font-size: 1.2rem;
 }
 
-.btn-primary {
-  background-color: #5a9eaa;
+/*.btn-primary {
+  background-color: #777;
 }
 
 .btn-primary:hover {
@@ -285,7 +285,7 @@ input:focus {
   color: #777;
   cursor: not-allowed;
 }
-
+*/
 .btn-primary.is-external {
   position: relative;
   padding-left: 50px;
@@ -1567,7 +1567,13 @@ blockquote footer {
   margin-bottom: 10px;
 }
 
-.accordion > .card > .card-header {
+.accordion > .card > .card-header h2,
+.accordion > .card > .card-header h3 {
+  font-size: 14px;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+/*.accordion > .card > .card-header {
   position: relative;
   padding: 15px 100px 15px 15px;
   margin: 0;
@@ -1584,12 +1590,6 @@ blockquote footer {
   transition: 0.3s ease-in-out;
   cursor: pointer;
   z-index: 10;
-}
-
-.accordion > .card > .card-header h2,
-.accordion > .card > .card-header h3 {
-  font-size: 1.5rem;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
 .accordion > .card > .card-header:before, .accordion > .card > .card-header:after {
@@ -1654,7 +1654,7 @@ blockquote footer {
     padding: 20px;
     font-size: 1.5rem;
   }
-}
+}*/
 
 /**************************************************/
 /************* HANDLES CAROUSEL *******************/
@@ -1772,10 +1772,9 @@ blockquote footer {
 /****************** HANDLES FOOTER ****************/
 /**************************************************/
 .footer {
-  position: relative;
+  width:100%;
   background: #121212;
-  height: 330px;
-  margin-top: 13rem;
+  height: 160px; 
 }
 
 .footer .wrapper {
@@ -1998,7 +1997,6 @@ input[type='checkbox'] ~ .form-check-label:before {
 /****************** HANDLES HEADER ****************/
 /**************************************************/
 .header {
-  position: fixed;
   top: 0px;
   width: 100vw;
   height: 70px;
