@@ -84,7 +84,7 @@ main,
   transition: 1s;
 }
 
-#epci_list_container .main-content :hover{ 
+#epci_list_container .main-content :hover{
   cursor:pointer;
   background-color:#ddd;
 }
@@ -157,7 +157,7 @@ main,
   transition: fill .4s ease;
 }
 
-.map-feature:hover {  
+.map-feature:hover {
   fill: #00a6c0;
 }
 
@@ -230,7 +230,7 @@ main,
 }
 
 .btn-primary,
-.btn-primary:not(:disabled):not(.disabled).active, 
+.btn-primary:not(:disabled):not(.disabled).active,
 .btn-primary:not(:disabled):not(.disabled):active,
 .show>.btn-primary.dropdown-toggle,
 .btn-primary:hover{
@@ -258,7 +258,7 @@ main,
     margin:20px;
     background-color:#eee;
     border-radius:5px;
-    padding:5px;  
+    padding:5px;
   }
   /*#map svg {
       margin-top: 150px;
@@ -285,4 +285,10 @@ main,
   }
 }
 
+.card.main-content {
+  display: none;
+}
 
+.card.main-content.selected {
+  display: flex;
+}

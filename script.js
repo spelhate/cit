@@ -65,7 +65,7 @@ $(document).ready(function () {
 
     })
   })
-  
+
   $('#epci_list .card').click(function () {
     $(this).css({
       boxShadow: '0px 3px 6px rgba(0,0,0, 0.16)',
@@ -84,13 +84,11 @@ $(document).ready(function () {
       if (test && notempty) {
         if(!$(this).hasClass('selected')){
           searchResults++
-          $(this).show()
           $(this).addClass('selected')
         }
       } else {
         if($(this).hasClass('selected')){
           $(this).removeClass('selected')
-          $(this).hide()
           searchResults--
         }
 
@@ -114,8 +112,8 @@ $(document).ready(function () {
       $("#toggleButton").show();
     }
 
-    
-      
+
+
 
     // clear map filter
     document.querySelectorAll(".map-feature.selected").forEach(function(item) {
@@ -140,7 +138,7 @@ $(document).ready(function () {
    // Shows modal on button click
    /* window.onresize = doFunc;
     var screenWidth = window.screen.width;
-    function resize (){ 
+    function resize (){
       if ( screenWidth <= 767) {
         console.log ("Yes")
       }else{
