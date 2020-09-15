@@ -200,7 +200,7 @@ var screenWidth = window.screen.width;
 
 $( window ).on("resize",function(){
   var screenHeight = window.innerHeight;
-  var searchListHeight = screenHeight - 120;
+  var searchListHeight = screenHeight - 70;
   //var searchListResultsHeight = searchListHeight - 60;
   //var mainHeight = screenHeight - 160;
   //var footerPlacement = mainHeight + 160;

@@ -4,6 +4,14 @@ main{
   display:block;
 }
 
+h1{
+  display:inline-block;
+  color:#f7f7f7;
+  font-size:25px;
+  margin-left:10px;
+
+}
+
 #map {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -34,7 +42,6 @@ main{
   .recherche {
     position: relative;
     margin-left: auto;
-    margin-right:30px;
   }
 
   .-home .-contentList #epci_list #searchFeedback2, #searchIndication {
@@ -51,17 +58,12 @@ main{
 
 #epci_list_container{
   position:absolute;
-  background-color:white;
-  border-left:1px solid #ddd;
+  background-color:#444;
   right:0;
-  top:100px;
+  top: 70px;
   display:none;
   transition: 0.5s;
-overflow-y:scroll;
-}
-
-#epci_list_container #epci_list{
-  overflow-y:scroll;
+  overflow-y:inherit;
 }
 
 main,
@@ -71,12 +73,22 @@ main,
 
 #epci_list_container .main-content :hover{
   cursor:pointer;
-  background-color:#ddd;
+  background-color:#222;
+}
+
+#epci_list_container h3{
+  padding:10px;
+  font-size:18px;
+color:#f5f5f5;
 }
 
 #epci_list_container h4{
   padding:5px;
-  color:#555;
+  color:#eee;
+}
+
+#epci_list .card-header{
+  background-color:#666;
 }
 
 .card .badge-dark {
@@ -178,11 +190,12 @@ main,
 }
 
 .-home .title.toggled-margin{
-  margin-top:10px;
+  margin-top:25px;
+  font-size:23px;
 }
 
 #searchIndication{
-  margin:20px;
+  margin:25px;
 }
 
 .main-content .content-list {
@@ -234,6 +247,15 @@ main,
 /*--Media queries--*/
 
 @media only screen and (max-width: 767px) {
+  h1{
+  font-size:22px;
+  }
+.-home .title.toggled-margin{
+    font-size:18px
+  }
+  h4{
+    font-size:15px;
+  }
   .mobileShow{
     display:block;
     text-align:center;
