@@ -200,13 +200,13 @@ var screenWidth = window.screen.width;
 
 $( window ).on("resize",function(){
   var screenHeight = window.innerHeight;
-  var searchListHeight = screenHeight - 70;
-  //var searchListResultsHeight = searchListHeight - 60;
-  //var mainHeight = screenHeight - 160;
-  //var footerPlacement = mainHeight + 160;
+  var searchListHeightD = screenHeight - 70;
+  var searchListHeightM = screenHeight - 140;
 
-  $("#epci_list_container").css("height", searchListHeight);
-  //$("#epci_list").css("height", searchListResultsHeight);
-  //$("main").css("min-height", mainHeight);
-  //$(".footer").css("top", footerPlacement);
+      if ( screenWidth <= 575) {
+        $("#epci_list_container").css("height", searchListHeightM);
+      }else{
+        $("#epci_list_container").css("height", searchListHeightD);
+      }
+
 }).resize();

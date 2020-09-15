@@ -248,7 +248,7 @@ color:#f5f5f5;
 
 @media only screen and (max-width: 767px) {
   h1{
-  font-size:22px;
+  font-size:23px;
   }
 .-home .title.toggled-margin{
     font-size:18px
@@ -267,14 +267,11 @@ color:#f5f5f5;
     border-radius:5px;
     padding:5px;
   }
-  /*#map svg {
-      margin-top: 150px;
-    }*/
   #map{
     margin:20px auto;
   }
   #epci_list_container{
-    top:71px;
+    top:70px;
     padding-top: 20px;
   }
   #epci_list_container,
@@ -289,6 +286,22 @@ color:#f5f5f5;
   }
   .recherche{
     margin-right:0px;
+  }
+  .header{
+    height:140px;
+  }
+  #epci_list_container{
+      top:140px;
+      padding-top: 20px;
+    }
+  .recherche{
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 356px) {
+  h1{
+    font-size:19px;
   }
 }
 
