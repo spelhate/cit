@@ -64,6 +64,7 @@ h1{
   display:none;
   transition: 0.5s;
   overflow-y:inherit;
+  display: none;
 }
 
 main,

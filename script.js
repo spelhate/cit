@@ -76,6 +76,11 @@ $(document).ready(function () {
     $('.collapse').collapse('hide')
     var value = $(this).val().toLowerCase()
     var notempty = value.length > 0
+    if (notempty) {
+      $('.cancel').show();
+    } else {
+      $('.cancel').hide();
+    }
     $('#epci_list .main-content').filter(function () {
       var txt = $(this).attr('data-filter').toLowerCase()
       var test = txt.indexOf(value) > -1
@@ -95,19 +100,17 @@ $(document).ready(function () {
     if(searchResults>0) {
       $("#searchFeedback2").hide();
       $("#epci_list_container").show();
-      $("#epci_list_container").addClass('col-md-5 col-11')
       $("main").addClass('col-md-7 col-xs-12')
-      $("#toggleButton").hide();
+
     } else if (searchResults === 0 && notempty) {
       $("#searchFeedback2").show();
-      $("#epci_list_container").hide();
-      $("#toggleButton").show();
+      $("#epci_list_container").show();
+
     } else {
       $("#searchFeedback2").hide();
       $("#epci_list_container").hide();
-      $("#epci_list_container").removeClass('col-md-5 col-11')
       $("main").removeClass('col-md-7 col-xs-12')
-      $("#toggleButton").show();
+
     }
 
     // clear map filter
@@ -198,22 +201,14 @@ var screenWidth = window.screen.width;
     $('#epci_modal .card-theme').find('.collapse.show').collapse('hide');
   });
 
-  $('#search').addEventListener(function() {
-      if(this.value != null){
-      $('.cancel').css("display", block);
-      }else {
-      $('.cancel').css("display", none);
-    }
-  });
-
   $('.cancel').click(function() {
       $("#epci_list_container").hide();
-      $("#epci_list_container").removeClass('col-md-5 col-11');
       $("main").removeClass('col-md-7 col-xs-12');
       $("#search").val("");
+      $(this).hide();
     });
 
-  
+
 
 })
 
