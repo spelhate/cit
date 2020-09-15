@@ -72,8 +72,6 @@ $(document).ready(function () {
     })
   })
 
-
-
   $('#search').on('keyup search', function () {
     $('.collapse').collapse('hide')
     var value = $(this).val().toLowerCase()
@@ -112,9 +110,6 @@ $(document).ready(function () {
       $("#toggleButton").show();
     }
 
-
-
-
     // clear map filter
     document.querySelectorAll(".map-feature.selected").forEach(function(item) {
       item.classList.toggle("selected");
@@ -145,7 +140,7 @@ $(document).ready(function () {
       console.log("no");
       }};
 
-    window.onresize = resize;*/
+    window.onresize = resize;
 $( window ).on("resize",function(){
 var screenWidth = window.screen.width;
   if ( screenWidth <= 767) {
@@ -154,21 +149,16 @@ var screenWidth = window.screen.width;
       console.log("no");
       }
 
-}).resize();
+}).resize();*/
 
 })
 
 // X close search results and resets map size
-$("#hideSearchResults").click(function(){
+/*$("#hideSearchResults").click(function(){
   $("#epci_list_container").hide();
   $("#epci_list_container").removeClass('col-md-5 col-11')
   $("main").removeClass('col-md-7 col-sm-12')
 });
-
-  $('#toggleButton').on('click', function () {
-     $('#epci_list_container').toggle();
-     $('#epci_list_container').addClass("completeList");
-  });
 
   // Toggle map or list
  /*$('#toggleButton').on('click', function () {
@@ -191,9 +181,12 @@ $("#hideSearchResults").click(function(){
       button.toggleClass('list')
       button.text('Afficher la carte')
     }
-  })*/
+  })
 
-
+  $('#toggleButton').on('click', function () {
+     $('#epci_list_container').toggle();
+     $('#epci_list_container').addClass("completeList");
+  });*/
 
   $('#epci_modal').on('show.bs.modal', function (e) {
     $(".tooltip").hide();
@@ -207,13 +200,13 @@ $("#hideSearchResults").click(function(){
 
 $( window ).on("resize",function(){
   var screenHeight = window.innerHeight;
-  var searchListHeight = screenHeight - 350;
-  var searchListResultsHeight = searchListHeight - 60;
-  var mainHeight = screenHeight - 160;
-  var footerPlacement = mainHeight + 160;
+  var searchListHeight = screenHeight - 120;
+  //var searchListResultsHeight = searchListHeight - 60;
+  //var mainHeight = screenHeight - 160;
+  //var footerPlacement = mainHeight + 160;
 
   $("#epci_list_container").css("height", searchListHeight);
-  $("#epci_list").css("height", searchListResultsHeight);
-  $("main").css("min-height", mainHeight);
-  $(".footer").css("top", footerPlacement);
+  //$("#epci_list").css("height", searchListResultsHeight);
+  //$("main").css("min-height", mainHeight);
+  //$(".footer").css("top", footerPlacement);
 }).resize();
