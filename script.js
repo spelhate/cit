@@ -190,11 +190,30 @@ var screenWidth = window.screen.width;
 
   $('#epci_modal').on('show.bs.modal', function (e) {
     $(".tooltip").hide();
+    $("#epci_list_container").hide();
+    $("main").removeClass('col-md-7 col-xs-12')
   })
 
   $('#epci_modal').on('show.bs.collapse','.collapse', function() {
     $('#epci_modal .card-theme').find('.collapse.show').collapse('hide');
   });
+
+  $('#search').addEventListener(function() {
+      if(this.value != null){
+      $('.cancel').css("display", block);
+      }else {
+      $('.cancel').css("display", none);
+    }
+  });
+
+  $('.cancel').click(function() {
+      $("#epci_list_container").hide();
+      $("#epci_list_container").removeClass('col-md-5 col-11');
+      $("main").removeClass('col-md-7 col-xs-12');
+      $("#search").val("");
+    });
+
+  
 
 })
 
@@ -203,7 +222,7 @@ $( window ).on("resize",function(){
   var searchListHeightD = screenHeight - 70;
   var searchListHeightM = screenHeight - 140;
 
-      if ( screenWidth <= 575) {
+      if ( screenHeight <= 575) {
         $("#epci_list_container").css("height", searchListHeightM);
       }else{
         $("#epci_list_container").css("height", searchListHeightD);
