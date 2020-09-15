@@ -137,6 +137,27 @@ $(document).ready(function () {
 
     });
 
+   // Shows modal on button click
+   /* window.onresize = doFunc;
+    var screenWidth = window.screen.width;
+    function resize (){ 
+      if ( screenWidth <= 767) {
+        console.log ("Yes")
+      }else{
+      console.log("no");
+      }};
+
+    window.onresize = resize;*/
+$( window ).on("resize",function(){
+var screenWidth = window.screen.width;
+  if ( screenWidth <= 767) {
+        console.log ("Yes")
+      }else{
+      console.log("no");
+      }
+
+}).resize();
+
 })
 
 // X close search results and resets map size
@@ -185,3 +206,16 @@ $("#hideSearchResults").click(function(){
   });
 
 })
+
+$( window ).on("resize",function(){
+  var screenHeight = window.innerHeight;
+  var searchListHeight = screenHeight - 350;
+  var searchListResultsHeight = searchListHeight - 60;
+  var mainHeight = screenHeight - 160;
+  var footerPlacement = mainHeight + 160;
+
+  $("#epci_list_container").css("height", searchListHeight);
+  $("#epci_list").css("height", searchListResultsHeight);
+  $("main").css("min-height", mainHeight);
+  $(".footer").css("top", footerPlacement);
+}).resize();

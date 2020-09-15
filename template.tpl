@@ -2,7 +2,7 @@
 {{#epci}}
     <div class="card main-content" data-codegeo="{{dataid}}" data-filter="{{label}}">
         <div class="card-header" id="heading-{{dataid}}">
-            <h3 class="mb-0">{{label}}</h3>
+            <h4 class="mb-0">{{label}}</h4>
         </div>
 
         <div id="epci_{{dataid}}" class="content-list">
