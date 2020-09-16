@@ -190,19 +190,29 @@ $( window ).on("resize",function(){
 
 // Changes search to icon on mobile + animation
 
-const mq = window.matchMedia( "(max-width: 575px)" );
-
-if (mq.matches) {
-  $(".recherche").addClass("reduced");
-
-}
-
 $(".recherche").click(function(){
   if ($(this).hasClass("reduced")){
-    $("h1").hide();
     $(".recherche").removeClass("reduced");
     $(".search-trigger").addClass("transition");
     $("#search").focus();
+      if ($(window).width() < 575 && $(this).hasClass("reduced")) {
+      $("h1").show();
+      }else if($(window).width() > 575){
+        $("h1").show();
+      } else {
+        $("h1").hide();
+      }
   }
 
+});
+
+// reduces search when click outside of input
+
+$(document).mouseup(function(e){
+    var search = $(".recherche");
+
+    // If the target of the click isn't the container
+    if(!search.is(e.target) && search.has(e.target).length === 0){
+        search.addClass("reduced");
+    }
 });

@@ -287,7 +287,7 @@ header .cancel{
   display:none;
 }
 
-#epci_modal button{
+#epci_modal span.cancel{
   display:block!important;
   border: none;
   background-color: transparent;
@@ -356,7 +356,9 @@ header .cancel{
     right:15px;
     position:absolute;
   }
- 
+  .header .recherche.reduced .cancel{
+    display:none!important;
+  }
   .header .recherche.reduced button i{
     width:21px;
     height:21px;
