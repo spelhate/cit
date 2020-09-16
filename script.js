@@ -148,6 +148,8 @@ $(document).ready(function () {
 
   $('#epci_modal').on('show.bs.modal', function (e) {
     $(".tooltip").hide();
+    $(".recherche").addClass("reduced");
+    $("h1").show();
     $("#epci_list_container").hide();
     $("main").removeClass('col-md-7 col-xs-12')
   })
@@ -167,7 +169,7 @@ $(document).ready(function () {
       document.querySelectorAll(".map-feature.filtered").forEach(function(item) {
       item.classList.remove("filtered");
 
-    }) 
+    })
    });
 });
 
@@ -186,24 +188,14 @@ const mq = window.matchMedia( "(max-width: 575px)" );
 
 if (mq.matches) {
   $(".recherche").addClass("reduced");
-  $(".search-trigger").addClass("reduced");
-  $(".recherche button").addClass("reduced");
-  $(".recherche button i").addClass("reduced");
-  
-} else {
-  $("h1").show();
-     
-};
+
+}
 
 $(".recherche").click(function(){
   if ($(this).hasClass("reduced")){
     $("h1").hide();
     $(".recherche").removeClass("reduced");
-    $(".search-trigger").removeClass("reduced");
-    $(".recherche button").removeClass("reduced");
-    $(".recherche button i").removeClass("reduced");
     $(".search-trigger").addClass("transition");
   }
 
 });
-

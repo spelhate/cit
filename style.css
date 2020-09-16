@@ -347,15 +347,15 @@ main,
   .recherche.transition{
     transition:2s;
   }
-  .header .recherche button i.reduced{
+  .header .recherche.reduced button i{
     width:21px;
     height:21px;
   }
-  .header .recherche .search-trigger.reduced{
+  .header .recherche.reduced .search-trigger{
     width:40px;;
     right:0;
   }
-  .header .recherche button.reduced{
+  .header .recherche.reduced button{
     width:unset;
     height:unset;
     right:unset;
@@ -384,4 +384,3 @@ main,
     font-size:18px;
   }
 }
-
