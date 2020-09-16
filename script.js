@@ -50,6 +50,19 @@ $(document).ready(function () {
         })
       })
 
+      document.querySelectorAll(".main-content").forEach(function(element){
+        element.addEventListener("mouseover", function (e) {
+         let code_geo = e.currentTarget.dataset.codegeo;
+         let mapFeature = document.getElementById("feature-" + code_geo);
+           mapFeature.classList.add("selected");
+       })
+       element.addEventListener("mouseout", function (e) {
+         let code_geo = e.currentTarget.dataset.codegeo;
+         let mapFeature = document.getElementById("feature-" + code_geo);
+         mapFeature.classList.remove("selected");
+       })
+     });
+
     })
   })
 
@@ -59,25 +72,26 @@ $(document).ready(function () {
     })
   })
 
-
-
   $('#search').on('keyup search', function () {
     $('.collapse').collapse('hide')
     var value = $(this).val().toLowerCase()
     var notempty = value.length > 0
+    if (notempty) {
+      $('.cancel').show();
+    } else {
+      $('.cancel').hide();
+    }
     $('#epci_list .main-content').filter(function () {
       var txt = $(this).attr('data-filter').toLowerCase()
       var test = txt.indexOf(value) > -1
       if (test && notempty) {
         if(!$(this).hasClass('selected')){
           searchResults++
-          $(this).show()
           $(this).addClass('selected')
         }
       } else {
         if($(this).hasClass('selected')){
           $(this).removeClass('selected')
-          $(this).hide()
           searchResults--
         }
 
@@ -85,14 +99,20 @@ $(document).ready(function () {
     })
     if(searchResults>0) {
       $("#searchFeedback2").hide();
-      $("#searchIndication").hide();
+      $("#epci_list_container").show();
+      $("main").addClass('col-md-7 col-xs-12')
+
     } else if (searchResults === 0 && notempty) {
       $("#searchFeedback2").show();
-      $("#searchIndication").hide();
+      $("#epci_list_container").show();
+
     } else {
-      $("#searchIndication").show();
       $("#searchFeedback2").hide();
+      $("#epci_list_container").hide();
+      $("main").removeClass('col-md-7 col-xs-12')
+
     }
+
     // clear map filter
     document.querySelectorAll(".map-feature.selected").forEach(function(item) {
       item.classList.toggle("selected");
@@ -113,36 +133,86 @@ $(document).ready(function () {
 
     });
 
-  })
-  // Toggle map or list
-  $('#toggleButton').on('click', function () {
-    var carte = $('.toggle_hidden')
-    var list_container = document.getElementById('list-container')
-    if (carte.hasClass('d-none')) {
-      carte.removeClass('d-none')
-      list_container.classList.remove('toggled-margin')
-    } else {
-      carte.addClass('d-none')
-      list_container.classList.add('toggled-margin')
-    }
-    list_container.classList.toggle('toggle_hide')
+   // Shows modal on button click
+   /* $( window ).on("resize",function(){
+    var screenWidth = window.screen.width;
+    if ( screenWidth <= 767) {
+        console.log ("Yes")
+      }else{
+      console.log("no");
+      }
 
-    var button = $(this)
-    if (button.hasClass('list')) {
-      button.toggleClass('list')
-      button.text('Afficher la liste')
-    } else {
-      button.toggleClass('list')
-      button.text('Afficher la carte')
-    }
-  })
+    }).resize();*/
+
+})
 
   $('#epci_modal').on('show.bs.modal', function (e) {
     $(".tooltip").hide();
+    $(".recherche").addClass("reduced");
+    $("h1").show();
+    $("#epci_list_container").hide();
+    $("main").removeClass('col-md-7 col-xs-12')
+    $("#search").val("");
+    document.querySelectorAll(".map-feature.filtered").forEach(function(item) {
+      item.classList.remove("filtered");
+
+    })
+
   })
 
   $('#epci_modal').on('show.bs.collapse','.collapse', function() {
     $('#epci_modal .card-theme').find('.collapse.show').collapse('hide');
   });
 
-})
+// Actions on the "X" for the search
+
+  $('header .cancel').click(function() {
+      $("#epci_list_container").hide();
+      $("main").removeClass('col-md-7 col-xs-12');
+      $("#search").val("");
+      $(this).hide();
+
+      document.querySelectorAll(".map-feature.filtered").forEach(function(item) {
+      item.classList.remove("filtered");
+
+    })
+   });
+});
+
+// adjusts height of search results list
+$( window ).on("resize",function(){
+  var screenHeight = window.innerHeight;
+  var searchListHeightD = screenHeight - 70;
+  $("#epci_list_container").css("height", searchListHeightD);
+}).resize();
+
+
+
+// Changes search to icon on mobile + animation
+
+$(".recherche").click(function(){
+  if ($(this).hasClass("reduced")){
+    $(".recherche").removeClass("reduced");
+    $(".search-trigger").addClass("transition");
+    $("#search").focus();
+      if ($(window).width() < 575 && $(this).hasClass("reduced")) {
+      $("h1").show();
+      }else if($(window).width() > 575){
+        $("h1").show();
+      } else {
+        $("h1").hide();
+      }
+  }
+
+});
+
+// reduces search when click outside of input
+
+$(document).mouseup(function(e){
+    var search = $(".recherche");
+
+    // If the target of the click isn't the container
+    if(!search.is(e.target) && search.has(e.target).length === 0){
+        search.addClass("reduced");
+    }
+});

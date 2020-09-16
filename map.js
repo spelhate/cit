@@ -1,7 +1,8 @@
 ﻿var MAP_WIDTH = 800
-var MAP_HEIGHT = 600
+var MAP_HEIGHT = 500
 
 var mapContainer = document.getElementById('map');
+
 // Create the canvas for the map
 var map = new Raphael(mapContainer, MAP_WIDTH, MAP_HEIGHT);
 
@@ -39,6 +40,15 @@ data.forEach(function (item) {
       $('#epci_modal').modal('show');
     }
   };
+  svg.ontouchstart = function (e) {
+    let id = e.currentTarget.id;
+    let code_geo = e.currentTarget.getAttribute("data-codegeo");
+    if (code_geo !== 'null') {
+     console.log("touchstart");
+    }
+  };
+
+
   regions[item.id] = feature;
 
 });
