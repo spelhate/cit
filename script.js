@@ -152,6 +152,12 @@ $(document).ready(function () {
     $("h1").show();
     $("#epci_list_container").hide();
     $("main").removeClass('col-md-7 col-xs-12')
+    $("#search").val("");
+    document.querySelectorAll(".map-feature.filtered").forEach(function(item) {
+      item.classList.remove("filtered");
+
+    })
+
   })
 
   $('#epci_modal').on('show.bs.collapse','.collapse', function() {
@@ -160,7 +166,7 @@ $(document).ready(function () {
 
 // Actions on the "X" for the search
 
-  $('.cancel').click(function() {
+  $('header .cancel').click(function() {
       $("#epci_list_container").hide();
       $("main").removeClass('col-md-7 col-xs-12');
       $("#search").val("");
@@ -196,6 +202,7 @@ $(".recherche").click(function(){
     $("h1").hide();
     $(".recherche").removeClass("reduced");
     $(".search-trigger").addClass("transition");
+    $("#search").focus();
   }
 
 });
