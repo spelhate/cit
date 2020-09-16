@@ -288,7 +288,7 @@ main,
 
 @media only screen and (max-width: 767px) {
   h1{
-  font-size:23px;
+  font-size:20px;
   }
 .-home .title.toggled-margin{
     font-size:18px
@@ -327,20 +327,61 @@ main,
   .recherche{
     margin-right:0px;
   }
-  .header{
-    height:140px;
-  }
   #epci_list_container{
-      top:140px;
       padding-top: 20px;
     }
-  .recherche{
-    margin: 0 auto;
+
+  .header .logo img{
+    width:30px;
+    vertical-align:bottom;
   }
+
+  /* Reduced search*/
+  .recherche.reduced{
+    background-color:white;
+    border-radius:25px;
+    margin:0;
+    right:15px;
+    position:absolute;
+  }
+  .recherche.transition{
+    transition:2s;
+  }
+  .header .recherche button i.reduced{
+    width:21px;
+    height:21px;
+  }
+  .header .recherche .search-trigger.reduced{
+    width:40px;;
+    right:0;
+  }
+  .header .recherche button.reduced{
+    width:unset;
+    height:unset;
+    right:unset;
+    padding:10px;
+  }
+
+  .header .recherche .search-trigger.transition{
+    width:100%;
+    animation:reveal 1s backwards;
+  }
+
+@keyframes reveal {
+  from {
+    clip-path: inset(0 0 0 100%);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+
 }
 
 @media only screen and (max-width: 356px) {
   h1{
-    font-size:19px;
+    font-size:18px;
   }
 }
+

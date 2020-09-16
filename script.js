@@ -134,62 +134,17 @@ $(document).ready(function () {
     });
 
    // Shows modal on button click
-   /* window.onresize = doFunc;
+   /* $( window ).on("resize",function(){
     var screenWidth = window.screen.width;
-    function resize (){
-      if ( screenWidth <= 767) {
-        console.log ("Yes")
-      }else{
-      console.log("no");
-      }};
-
-    window.onresize = resize;
-$( window ).on("resize",function(){
-var screenWidth = window.screen.width;
-  if ( screenWidth <= 767) {
+    if ( screenWidth <= 767) {
         console.log ("Yes")
       }else{
       console.log("no");
       }
 
-}).resize();*/
+    }).resize();*/
 
 })
-
-// X close search results and resets map size
-/*$("#hideSearchResults").click(function(){
-  $("#epci_list_container").hide();
-  $("#epci_list_container").removeClass('col-md-5 col-11')
-  $("main").removeClass('col-md-7 col-sm-12')
-});
-
-  // Toggle map or list
- /*$('#toggleButton').on('click', function () {
-    var carte = $('.toggle_hidden')
-    var list_container = document.getElementById('list-container')
-    if (carte.hasClass('d-none')) {
-      carte.removeClass('d-none')
-      list_container.classList.remove('toggled-margin')
-    } else {
-      carte.addClass('d-none')
-      list_container.classList.add('toggled-margin')
-    }
-    list_container.classList.toggle('toggle_hide')
-
-    var button = $(this)
-    if (button.hasClass('list')) {
-      button.toggleClass('list')
-      button.text('Afficher la liste')
-    } else {
-      button.toggleClass('list')
-      button.text('Afficher la carte')
-    }
-  })
-
-  $('#toggleButton').on('click', function () {
-     $('#epci_list_container').toggle();
-     $('#epci_list_container').addClass("completeList");
-  });*/
 
   $('#epci_modal').on('show.bs.modal', function (e) {
     $(".tooltip").hide();
@@ -201,26 +156,54 @@ var screenWidth = window.screen.width;
     $('#epci_modal .card-theme').find('.collapse.show').collapse('hide');
   });
 
+// Actions on the "X" for the search
+
   $('.cancel').click(function() {
       $("#epci_list_container").hide();
       $("main").removeClass('col-md-7 col-xs-12');
       $("#search").val("");
       $(this).hide();
-    });
 
+      document.querySelectorAll(".map-feature.filtered").forEach(function(item) {
+      item.classList.remove("filtered");
 
+    }) 
+   });
+});
 
-})
-
+// adjusts height of search results list
 $( window ).on("resize",function(){
   var screenHeight = window.innerHeight;
   var searchListHeightD = screenHeight - 70;
-  var searchListHeightM = screenHeight - 140;
-
-      if ( screenHeight <= 575) {
-        $("#epci_list_container").css("height", searchListHeightM);
-      }else{
-        $("#epci_list_container").css("height", searchListHeightD);
-      }
-
+  $("#epci_list_container").css("height", searchListHeightD);
 }).resize();
+
+
+
+// Changes search to icon on mobile + animation
+
+const mq = window.matchMedia( "(max-width: 575px)" );
+
+if (mq.matches) {
+  $(".recherche").addClass("reduced");
+  $(".search-trigger").addClass("reduced");
+  $(".recherche button").addClass("reduced");
+  $(".recherche button i").addClass("reduced");
+  
+} else {
+  $("h1").show();
+     
+};
+
+$(".recherche").click(function(){
+  if ($(this).hasClass("reduced")){
+    $("h1").hide();
+    $(".recherche").removeClass("reduced");
+    $(".search-trigger").removeClass("reduced");
+    $(".recherche button").removeClass("reduced");
+    $(".recherche button i").removeClass("reduced");
+    $(".search-trigger").addClass("transition");
+  }
+
+});
+
