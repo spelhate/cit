@@ -356,9 +356,7 @@ header .cancel{
     right:15px;
     position:absolute;
   }
-  .recherche.transition{
-    transition:2s;
-  }
+ 
   .header .recherche.reduced button i{
     width:21px;
     height:21px;
@@ -376,7 +374,7 @@ header .cancel{
 
   .header .recherche:not(.reduced) .search-trigger.transition{
     width:100%;
-    animation:reveal 1s backwards;
+    animation:reveal 0.5s backwards;
   }
 
   @keyframes reveal {
