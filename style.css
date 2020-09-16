@@ -352,7 +352,7 @@ main,
     height:21px;
   }
   .header .recherche.reduced .search-trigger{
-    width:40px;;
+    width:40px;
     right:0;
   }
   .header .recherche.reduced button{
@@ -362,7 +362,7 @@ main,
     padding:10px;
   }
 
-  .header .recherche .search-trigger.transition{
+  .header .recherche:not(.reduced) .search-trigger.transition{
     width:100%;
     animation:reveal 1s backwards;
   }
