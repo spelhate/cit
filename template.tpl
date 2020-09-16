@@ -4,7 +4,7 @@
     <div class="card-header collapsed" id="heading-{{dataid}}" data-toggle="collapse"
         data-target="#epci_{{dataid}}"
         aria-expanded="false" aria-controls="{{dataid}}">
-        <h3 class="mb-0">{{label}}</h3>
+        <h4 class="mb-0">{{label}}</h4>
     </div>
 
     <div id="epci_{{dataid}}" class="collapse" aria-labelledby="heading-{{dataid}}">
