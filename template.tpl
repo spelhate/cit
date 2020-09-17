@@ -54,7 +54,7 @@
                             <a class="fiche-level-2 disabled">L'implantation de la région</a>
 
                             {{#lycee}}
-                                <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci/{{dataid}}">Fiche lycées - éducation</a>
+                                <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_lycee/{{dataid}}">Fiche lycées - éducation</a>
                             {{/lycee}}
 
                             <a class="fiche-level-2 disabled">Culture – langues régionales – patrimoine - sports</a>
@@ -65,7 +65,7 @@
 
                             <a class="fiche-level-2 disabled">Environnement</a>
 
-                            <a class="fiche-level-2 disabled">Politique territoriale</a>
+                            <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_territoire/{{dataid}}">Politique territoriale</a>
 
                             <a class="fiche-level-2 disabled">Numérique</a>
 
