@@ -166,12 +166,13 @@ $(document).ready(function () {
 
 // Actions on the "X" for the search
 
-  $('header .cancel').click(function() {
+  $('header span.cancel').click(function() {
       $("#epci_list_container").hide();
       $("main").removeClass('col-md-7 col-xs-12');
       $("#search").val("");
       $(this).hide();
-
+      $(".recherche").addClass("reduced");
+      $("h1").show();
       document.querySelectorAll(".map-feature.filtered").forEach(function(item) {
       item.classList.remove("filtered");
 
@@ -195,6 +196,7 @@ $(".recherche").click(function(){
     $(".recherche").removeClass("reduced");
     $(".search-trigger").addClass("transition");
     $("#search").focus();
+    $("h1").show();
       if ($(window).width() < 575 && $(this).hasClass("reduced")) {
       $("h1").show();
       }else if($(window).width() > 575){
@@ -213,6 +215,7 @@ $(document).mouseup(function(e){
 
     // If the target of the click isn't the container
     if(!search.is(e.target) && search.has(e.target).length === 0){
-        search.addClass("reduced");
+      search.addClass("reduced");
+      $("h1").show();
     }
 });
