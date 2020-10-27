@@ -3354,9 +3354,9 @@ input[type='checkbox'] ~ .form-check-label:before {
 /**************************************************/
 /**************** HANDLES MODALS ******************/
 /**************************************************/
-.modal:not(#epci_modal) {
+/*.modal:not(#epci_modal) {
   position: static;
-}
+}*/
 
 .modal .modal-content {
   padding: 70px 25px 25px;
