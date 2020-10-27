@@ -25,7 +25,7 @@ h1{
     /*background: #f7f7f7;*/
     border-radius: 6px;
    /* box-shadow:0 0 10px #ccc;*/
-    margin-bottom:50px;
+    /*margin-bottom:50px;*/
     overflow:hidden;
 
   }
@@ -33,7 +33,7 @@ h1{
   #map svg {
     /*z-index: 10;*/
     margin-top: 25px;
-    overflow:visible!important;
+    /*overflow:visible!important;*/
   }
 
   #map svg{
@@ -376,12 +376,18 @@ header .cancel{
     vertical-align:bottom;
   }
 
+    .email_trigger{
+    position:absolute;
+    top:23px;
+    right:20px;  
+  }
+
   /* Reduced search*/
   .recherche.reduced{
     background-color:white;
     border-radius:25px;
     margin:0;
-    right:15px;
+    right:60px;
     position:absolute;
   }
   .header .recherche.reduced .cancel{

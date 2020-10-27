@@ -184,7 +184,14 @@ $(document).ready(function () {
 $( window ).on("resize",function(){
   var screenHeight = window.innerHeight;
   var searchListHeightD = screenHeight - 70;
-  $("#epci_list_container").css("height", searchListHeightD);
+  var epciList = $("#epci_list_container");
+  var main = $("main").height();
+  
+  if ( searchListHeightD < main){
+    $(epciList).css("height", main);
+  } else {
+    $(epciList).css("height", searchListHeightD);
+  }
 }).resize();
 
 
