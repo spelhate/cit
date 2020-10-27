@@ -3368,6 +3368,14 @@ input[type='checkbox'] ~ .form-check-label:before {
   transition: 0.3s ease-in-out;
 }
 
+#email_modal .modal-content .modal-body{
+  text-align:left;
+}
+
+#email_modal .modal-content .modal-body div div{
+  text-align:center;
+}
+
 .modal .modal-content:hover {
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.35);
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.35);
