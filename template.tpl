@@ -7,8 +7,12 @@
 
         <div id="epci_{{dataid}}" class="content-list">
             <div class="card-body">
-                <div class="card"><a class="fiche-level-1 card-header" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_chiffres_cles/{{dataid}}">Les chiffres clés
-                    du territoire<span><i class="fas fa-chart-line"/></span></a>
+                <div class="card">
+                  <div class="fiche-level-1 card-header trigger"  data-link="https://kartenn.region-bretagne.fr/mreport/epci_chiffres_cles/{{dataid}}">Les chiffres clés du territoire
+                    <span>
+                      <i class="fas fa-chart-line"/>
+                    </span>
+                  </div>
                 </div>
 
 
@@ -22,20 +26,20 @@
                     <div id="territory_{{dataid}}" class="collapse" aria-labelledby="heading-{{dataid}}@1">
                         <div class="fiche-list card-body">
 
-                            <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_communes/{{dataid}}">L'EPCI et les
-                                communes</a>
 
-                            <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_population/{{dataid}}">La population du
-                                territoire</a>
+                            <div class="fiche-level-2 enabled trigger"  data-link="https://kartenn.region-bretagne.fr/mreport/epci_communes/{{dataid}}">L'EPCI et les
+                                communes</div>
 
-                            <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_jeunesse/{{dataid}}">Fiche jeunesse</a>
+                            <div class="fiche-level-2 enabled trigger" data-link="https://kartenn.region-bretagne.fr/mreport/epci_population/{{dataid}}">La population du
+                                territoire</div>
+
+                            <div class="fiche-level-2 enabled trigger" target="_blank" data-link="https://kartenn.region-bretagne.fr/mreport/epci_jeunesse/{{dataid}}">Fiche jeunesse</div>
 
                             {{#epci_qpv}}
-                                <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_qpv/{{dataid}}">Fiche quartiers prioritaires de la ville</a>
+                                <div class="fiche-level-2 enabled trigger" target="_blank" data-link="https://kartenn.region-bretagne.fr/mreport/epci_qpv/{{dataid}}">Fiche quartiers prioritaires de la ville</div>
                             {{/epci_qpv}}
 
-                            <a class="fiche-level-2 disabled">Les schémas</a>
-
+                            <div class="fiche-level-2 disabled">Les schémas</div>
 
                         </div>
                     </div>
@@ -51,10 +55,10 @@
                     <div id="action_{{dataid}}" class="collapse" aria-labelledby="heading-{{dataid}}@2">
                         <div class="fiche-list card-body">
 
-                            <a class="fiche-level-2 disabled">L'implantation de la région</a>
+                            <div class="fiche-level-2 disabled trigger">L'implantation de la région</div>
 
                             {{#lycee}}
-                                <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_lycee/{{dataid}}">Fiche lycées - éducation</a>
+                                <div class="fiche-level-2 enabled trigger" data-link="https://kartenn.region-bretagne.fr/mreport/epci_lycee/{{dataid}}">Fiche lycées - éducation</div>
                             {{/lycee}}
 
                             <a class="fiche-level-2 disabled">Culture – langues régionales – patrimoine - sports</a>
@@ -65,7 +69,7 @@
 
                             <a class="fiche-level-2 disabled">Environnement</a>
 
-                            <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_territoire/{{dataid}}">Politique territoriale</a>
+                            <a class="fiche-level-2 enabled trigger" data-link="https://kartenn.region-bretagne.fr/mreport/epci_territoire/{{dataid}}">Politique territoriale</a>
 
                             <a class="fiche-level-2 disabled">Numérique</a>
 
@@ -76,8 +80,13 @@
                     </div>
                 </div>
 
-                <div class="card"><a class="fiche-level-1 card-header" target="_blank" href="https://kartenn.region-bretagne.fr/ws/breizhcop/engagements.php?siren={{dataid}}" >
-                    L’engagement du territoire dans la Breizh Cop <span><i class="fas fa-chart-line"/></span></a>
+                <div class="card">
+                    <div class="fiche-level-1 card-header trigger" data-link"https://kartenn.region-bretagne.fr/ws/breizhcop/engagements.php?siren={{dataid}}" >
+                    L’engagement du territoire dans la Breizh Cop 
+                      <span>
+                        <i class="fas fa-chart-line"/>
+                      </span>
+                    </div>
                 </div>
 
                 <div class="card card-theme">

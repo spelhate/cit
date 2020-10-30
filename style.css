@@ -1,3 +1,6 @@
+html{
+  overflow-y:auto;
+}
 
 main{
   position:relative;
@@ -67,6 +70,7 @@ h1{
   transition: 0.5s;
   overflow-y:inherit;
   display: none;
+  margin:0;
 }
 
 main,
@@ -109,6 +113,10 @@ main,
   padding-left: 25px;
 }
 
+.trigger:hover{
+  cursor:pointer;
+}
+
 .fiche-level-1 span {
   float: right;
   padding-right: 9px;
@@ -116,6 +124,12 @@ main,
 
 .fiche-level-2.disabled {
   font-style: italic;
+}
+
+.fiche-level-1{
+  font-size:15px;
+  font-weight: bold;
+  font-family: 'bretagneFont';
 }
 
 .fiche-level-2.enabled:after {
@@ -476,3 +490,38 @@ svg, .panzoom {
 /*.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
   opacity: 0;
 }
+
+/* CSS for Iframe*/
+
+.report-container{
+  position:absolute;
+  top:70px;
+  left:0;
+  right:0;
+  z-index:0;
+  margin:0;
+  padding:0;
+}
+
+.report-container .breadcrumb{
+  text-align:center;
+  background-color:#f5f5f5;
+  margin:0;
+  height:60px;
+  padding:20px;
+  font-weight:600;
+}
+
+.report-container .breadcrumb a{
+  margin:0;
+  text-decoration:underline;
+}
+
+.report-container .breadcrumb a:hover{
+  cursor:pointer;
+}
+
+#iframe{
+  border:none;
+}
+

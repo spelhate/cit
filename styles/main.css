@@ -1522,7 +1522,7 @@ blockquote footer {
 /**************************************************/
 /************** HANDLES BREADCRUMB ****************/
 /**************************************************/
-.breadcrumb {
+/*.breadcrumb {
   padding: 0;
   background: none;
   font-size: 1.2rem !important;
@@ -1535,14 +1535,14 @@ blockquote footer {
 }
 
 .breadcrumb .breadcrumb-item + .breadcrumb-item:before {
-  content: '>';
+  content: '/';
   font-weight: normal;
 }
 
 .breadcrumb .active {
   font-weight: bold;
   text-decoration: none;
-}
+}*/
 
 /**************************************************/
 /************** HANDLES ACCORDION *****************/

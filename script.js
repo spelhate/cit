@@ -101,6 +101,7 @@ $(document).ready(function () {
       $("#searchFeedback2").hide();
       $("#epci_list_container").show();
       $("main").addClass('col-md-7 col-xs-12')
+      $(".report-container").addClass('col-md-7 col-xs-12')
 
     } else if (searchResults === 0 && notempty) {
       $("#searchFeedback2").show();
@@ -110,6 +111,7 @@ $(document).ready(function () {
       $("#searchFeedback2").hide();
       $("#epci_list_container").hide();
       $("main").removeClass('col-md-7 col-xs-12')
+      $(".report-container").removeClass('col-md-7 col-xs-12')
 
     }
 
@@ -147,16 +149,43 @@ $(document).ready(function () {
 })
 
   $('#epci_modal').on('show.bs.modal', function (e) {
-    $(".tooltip").hide();
+    $(".tooltip").tooltip('hide');
     $(".recherche").addClass("reduced");
     $("h1").show();
     $("#epci_list_container").hide();
-    $("main").removeClass('col-md-7 col-xs-12')
+    $("main").removeClass('col-md-7 col-xs-12');
+    $(".report-container").removeClass('col-md-7 col-xs-12');
     $("#search").val("");
     document.querySelectorAll(".map-feature.filtered").forEach(function(item) {
       item.classList.remove("filtered");
 
     })
+
+    //Breadcrumb interactions
+
+    $("#homeLink").click(function(){
+      $("main").addClass("visible").removeClass("invisible").fadeIn( "slow" )
+      $(".report-container").addClass("invisible").removeClass("visible").fadeOut( "slow" )
+      $("html").css("overflow-y", "auto")
+    });
+
+    // display report in iframe
+    //changes iframe src for data-link of element clicked
+    var iframe = document.getElementById("iframe");
+
+    $("#epci_modal .trigger").click(function(event){
+      $("#epci_modal").modal('hide').fadeOut( "slow" )
+      $("main").addClass("invisible").fadeOut( "slow" )
+      $(".report-container").addClass("visible").removeClass("invisible").fadeIn( "slow" )
+      $("body").removeClass("modal-open")
+      $("html").css("overflow-y", "hidden")
+      iframe.src = event.target.dataset.link
+
+      var iframeTitle = $(event.target).text();
+      $('.breadcrumb .active').text(iframeTitle) ;
+
+    });
+
 
   })
 
@@ -169,6 +198,7 @@ $(document).ready(function () {
   $('header span.cancel').click(function() {
       $("#epci_list_container").hide();
       $("main").removeClass('col-md-7 col-xs-12');
+      $(".report-container").removeClass('col-md-7 col-xs-12');
       $("#search").val("");
       $(this).hide();
       $(".recherche").addClass("reduced");
@@ -192,9 +222,22 @@ $( window ).on("resize",function(){
   } else {
     $(epciList).css("height", searchListHeightD);
   }
+
+  // adjusts height and position of iframe and its container
+  var iframe = $("#iframe");
+  var iframe_height = searchListHeightD - 60;
+
+  $(iframe).css("height",iframe_height);
+
 }).resize();
 
+//removes height of map when iframe visible 
 
+if($(".report-container").hasClass("visible")){
+  $("#map").css("height",0)
+}else{
+$("#map").css("height","auto")
+}
 
 // Changes search to icon on mobile + animation
 
