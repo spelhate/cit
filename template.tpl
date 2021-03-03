@@ -57,23 +57,23 @@
                                 <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_lycee/{{dataid}}">Fiche lycées - éducation</a>
                             {{/lycee}}
 
-                            <a class="fiche-level-2 disabled">Culture – langues régionales – patrimoine - sports</a>
+                            <a class="fiche-level-2 disabled">Culture – langues régionales - sports</a>
+
+                            <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_patrimoine/{{dataid}}">Inventaire du patrimoine </a>
 
                             <a class="fiche-level-2 disabled">Mobilités</a>
 
-                            <a class="fiche-level-2 disabled">Economie – emploi – formation </a>
+                            <a class="fiche-level-2 disabled">Economie</a>
+
+                            <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_formation/{{dataid}}">Emploi – formation </a>
 
                             <a class="fiche-level-2 disabled">Environnement</a>
 
                             <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_territoire/{{dataid}}">Politique territoriale</a>
 
-                            <a class="fiche-level-2 disabled">Numérique</a>
-
                             <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_sante/{{dataid}}">Santé</a>
 
-                            <a class="fiche-level-2 disabled">Europe</a>
-
-
+                            <a class="fiche-level-2 disabled">Numérique</a>
 
                         </div>
                     </div>
@@ -83,7 +83,7 @@
                     L’engagement du territoire dans la Breizh Cop <span><i class="fas fa-chart-line"/></span></a>
                 </div>
 
-                <div class="card card-theme">
+                <!--<div class="card card-theme">
                     <div class="link card-header collapsed" id="heading-{{dataid}}@4" data-toggle="collapse"
                         data-target="#feeds_{{dataid}}"
                         aria-expanded="false" aria-controls="{{dataid}}">
@@ -95,6 +95,9 @@
 
                         </div>
                     </div>
+                </div>-->
+                 <div class="card" style="margin-top:20px;"><a class="fiche-level-1 card-header" target="_blank" href="http://prod-kartensig3.cr-bretagne.fr/ws/kentika/fiche-article.php?code_siren={{dataid}}&page=1">Actualités
+                    <span><i class="fas fa-chart-line"/></span></a>
                 </div>
 
 
