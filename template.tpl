@@ -69,7 +69,10 @@
 
                             <a class="fiche-level-2 disabled">Numérique</a>
 
+                            <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_sante/{{dataid}}">Santé</a>
+
                             <a class="fiche-level-2 disabled">Europe</a>
+
 
 
                         </div>
