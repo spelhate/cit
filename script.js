@@ -269,3 +269,8 @@ $(document).mouseup(function(e){
       $("h1").show();
     }
 });
+
+//On use of back button
+window.addEventListener('popstate', (event) => {
+  console.log("location: " + document.location + ", state: " + JSON.stringify(event.state));
+});
