@@ -109,7 +109,7 @@
 
                             <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_actualites/{{dataid}}">Statistiques des articles </a>
                             
-                            <a class="fiche-level-2 enabled" target="_blank" href="http://prod-kartensig3.cr-bretagne.fr/ws/kentika/fiche-article.php?code_siren={{dataid}}&page=1">Actualités </a>
+                            <a class="fiche-level-2 enabled" target="_blank" href="http://prod-kartensig3.cr-bretagne.fr/ws/kentika/fiche-article.php?code_siren={{dataid}}&page=1">Revue de presse </a>
                 </div>
 
 
