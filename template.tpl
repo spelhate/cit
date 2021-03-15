@@ -96,8 +96,20 @@
                         </div>
                     </div>
                 </div>-->
-                 <div class="card" style="margin-top:20px;"><a class="fiche-level-1 card-header" target="_blank" href="http://prod-kartensig3.cr-bretagne.fr/ws/kentika/fiche-article.php?code_siren={{dataid}}&page=1">Actualités
-                    <span><i class="fas fa-chart-line"/></span></a>
+                
+                <div class="card card-theme">
+                    <div class="link card-header collapsed" id="heading-{{dataid}}@3" data-toggle="collapse"
+                        data-target="#action_{{dataid}}"
+                        aria-expanded="false" aria-controls="{{dataid}}">
+                        <h5 class="mb-0">Actualités<span class="counter badge badge-dark">0</span></h5>
+                    </div>
+
+                <div id="action_{{dataid}}" class="collapse" aria-labelledby="heading-{{dataid}}@3">
+                        <div class="fiche-list card-body">
+
+                            <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_actualites/{{dataid}}">Statistiques des articles </a>
+                            
+                            <a class="fiche-level-2 enabled" target="_blank" href="http://prod-kartensig3.cr-bretagne.fr/ws/kentika/fiche-article.php?code_siren={{dataid}}&page=1">Actualités </a>
                 </div>
 
 
