@@ -174,8 +174,9 @@ main,
 .map-feature#feature-29155, map-feature#feature-29155:hover,
 .map-feature#feature-44, map-feature#feature-44:hover {
   stroke-dasharray: 4;
-  fill: #FFFFFF;
+  fill: rgba(0,0,0,0);
   cursor: default;
+
 }
 
 .modal .modal-content{
