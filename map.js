@@ -20,7 +20,7 @@ var customizeMap = function () {
       path.addEventListener('click', function (e) {
           let item = e.currentTarget;
           let code_geo = item.getAttribute("data-codegeo");
-          if (code_geo !== 'null') {
+          if ($('#epci_' + code_geo).length === 1) {
             var report_list = $('#epci_' + code_geo).html();
             var title = $('#heading-' + code_geo).text();
             $('#epci_modal_label').text(title);
