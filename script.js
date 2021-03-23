@@ -147,7 +147,7 @@ $(document).ready(function () {
 })
 
   $('#epci_modal').on('show.bs.modal', function (e) {
-    $(".tooltip").hide();
+    $(".tooltip").tooltip('hide');
     $(".recherche").addClass("reduced");
     $("h1").show();
     $("#epci_list_container").hide();
@@ -186,7 +186,7 @@ $( window ).on("resize",function(){
   var searchListHeightD = screenHeight - 70;
   var epciList = $("#epci_list_container");
   var main = $("main").height();
-  
+
   if ( searchListHeightD < main){
     $(epciList).css("height", main);
   } else {
