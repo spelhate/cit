@@ -3,7 +3,7 @@ Index carte d'identité du territoire
 
 https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/data/epci_simple.geojson
 
-Pour générer la carte svg, il faut à partir d'un fichier geojson utiliser cette ressource en ligne :
+Pour générer la carte svg (map.svg), il faut à partir d'un fichier geojson utiliser cette ressource en ligne :
 
 https://mapshaper.org/
 
