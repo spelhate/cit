@@ -150,7 +150,7 @@ main,
 
 .map-feature {
   fill: #FFFFFF;
-  
+
   stroke: #0094AB;
   stroke-width: 1;
   stroke-linejoin: round;
@@ -168,6 +168,14 @@ main,
 
 .map-feature.selected {
   fill: #295a63;
+}
+
+/* Customize map.feature by id (44 + ouessant)*/
+.map-feature#feature-29155, map-feature#feature-29155:hover,
+.map-feature#feature-44, map-feature#feature-44:hover {
+  stroke-dasharray: 4;
+  fill: #FFFFFF;
+  cursor: default;
 }
 
 .modal .modal-content{
@@ -307,7 +315,7 @@ header .cancel{
   padding-left:1.5rem;
 }
 
-.email_trigger img{ 
+.email_trigger img{
   width:1.5rem;
 }
 
@@ -379,7 +387,7 @@ header .cancel{
     .email_trigger{
     position:absolute;
     top:23px;
-    right:20px;  
+    right:20px;
   }
 
   /* Reduced search*/
