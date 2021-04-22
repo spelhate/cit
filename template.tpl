@@ -28,7 +28,7 @@
                             <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_population/{{dataid}}">Population du
                                 territoire</a>
 
-                            <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/fichesituationconomique/{{dataid}}">Emploi et entreprises</a>
+                            <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_situation_eco/{{dataid}}">Emploi et entreprises</a>
 
                             <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_jeunesse/{{dataid}}">Fiche jeunesse</a>
 
