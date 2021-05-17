@@ -59,23 +59,26 @@
                                 <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_lycee/{{dataid}}">Fiche lycées - éducation</a>
                             {{/lycee}}
 
-                            <a class="fiche-level-2 disabled">Culture – langues régionales - sports</a>
+                            <!--<a class="fiche-level-2 disabled">Culture – langues régionales - sports</a>-->
 
                             <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_patrimoine/{{dataid}}">Inventaire du patrimoine </a>
 
                             <a class="fiche-level-2 disabled">Mobilités</a>
 
-                            <a class="fiche-level-2 disabled">Economie</a>
+                            <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_economie/{{dataid}}">Economie</a>
 
                             <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_formation/{{dataid}}">Emploi – formation </a>
 
-                            <a class="fiche-level-2 disabled">Environnement</a>
+                            <div class="fiche-level-2">Environnement
+                              <a class="fiche-level-3 disabled"><li>Biodiversité</li> </a>
+                              <li><a class="fiche-level-3 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_eau/{{dataid}}">Eau</a></li>
+                            </div>
 
                             <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_territoire/{{dataid}}">Politique territoriale</a>
 
                             <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_sante/{{dataid}}">Santé</a>
 
-                            <a class="fiche-level-2 disabled">Numérique</a>
+                            <!--<a class="fiche-level-2 disabled">Numérique</a>-->
 
                         </div>
                     </div>

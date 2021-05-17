@@ -118,7 +118,13 @@ main,
   font-style: italic;
 }
 
-.fiche-level-2.enabled:after {
+.fiche-level-3.disabled {
+font-style: italic;
+color:black!important;
+}
+
+.fiche-level-2.enabled:after,
+.fiche-level-3.enabled:after{
   content: '';
   background: url(https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/css/fleche.svg) center no-repeat;
   background-size: contain;
@@ -131,12 +137,25 @@ main,
   margin-left: 10px;
 }
 
-.fiche-level-2.enabled {
+.fiche-level-2.enabled,
+.fiche-level-3.enabled {
   color: #3c5d92;
   font-family: "Open Sans";
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 2rem;
+}
+div.fiche-level-2{
+  color: #3c5d92;
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin-top: 1.6rem;
+}
+
+.-home #epci_modal a.fiche-level-3.enabled{
+display:inline-block;
 }
 
 .card.card-theme {
