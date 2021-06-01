@@ -65,7 +65,7 @@
 
                             <a class="fiche-level-2 disabled">Mobilités</a>
 
-                            <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_economie/{{dataid}}">Economie</a>
+                            <a class="fiche-level-2 disabled">Economie</a>
 
                             <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_formation/{{dataid}}">Emploi – formation </a>
 
