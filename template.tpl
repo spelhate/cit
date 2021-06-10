@@ -53,6 +53,26 @@
                     <div id="action_{{dataid}}" class="collapse" aria-labelledby="heading-{{dataid}}@2">
                         <div class="fiche-list card-body">
 
+							{{#ports1}}
+								<a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_port/{{dataid}}">Ports </a>
+							{{/ports1}}
+
+							{{#ports2}}
+								<a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_port4041/{{dataid}}">Ports </a>
+							{{/ports2}}
+
+							{{#ports3}}
+								<a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_port40414243/{{dataid}}">Ports </a>
+							{{/ports3}}
+
+							{{#ports4}}
+								<a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_port404142/{{dataid}}">Ports </a>
+							{{/ports4}}
+
+							{{#ports5}}
+								<a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_port40/{{dataid}}">Ports </a>
+							{{/ports5}}
+
                             <a class="fiche-level-2 disabled">L'implantation de la région</a>
 
                             {{#lycee}}
@@ -68,7 +88,7 @@
                             <a class="fiche-level-2 disabled">Economie</a>
 
                             <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_formation/{{dataid}}">Emploi – formation </a>
-
+							
                             <div class="fiche-level-2">Environnement
                               <a class="fiche-level-3 disabled"><li>Biodiversité</li> </a>
                               <li><a class="fiche-level-3 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_eau/{{dataid}}">Eau</a></li>
