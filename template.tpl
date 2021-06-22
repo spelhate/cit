@@ -92,6 +92,7 @@
                             <div class="fiche-level-2">Environnement
                               <a class="fiche-level-3 disabled"><li>Biodiversité</li> </a>
                               <li><a class="fiche-level-3 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_eau/{{dataid}}">Eau</a></li>
+							  <li><a class="fiche-level-3 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_energie/{{dataid}}">Energie-Climat</a></li>
                             </div>
 
                             <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_territoire/{{dataid}}">Politique territoriale</a>
