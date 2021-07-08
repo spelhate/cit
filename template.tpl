@@ -28,9 +28,13 @@
                             <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_population/{{dataid}}">Population du
                                 territoire</a>
 
-                            <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_situation_eco/{{dataid}}">Emploi et entreprises</a>
+                            <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_jeunesse/{{dataid}}">Jeunesse</a>
 
-                            <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_jeunesse/{{dataid}}">Fiche jeunesse</a>
+                            <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_sante/{{dataid}}">État de santé</a>
+
+							<a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_environnement_situation/{{dataid}}">Écologie et environnement</a>
+
+                            <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_situation_eco/{{dataid}}">Emploi et entreprises</a>
 
                             {{#epci_qpv}}
                                 <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_qpv/{{dataid}}">Fiche quartiers prioritaires de la ville</a>
@@ -89,16 +93,10 @@
 
                             <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_formation/{{dataid}}">Emploi – formation </a>
 							
-                            <div class="fiche-level-2">Environnement
-                              <a class="fiche-level-3 disabled"><li>Biodiversité</li> </a>
-							  <li><a class="fiche-level-3 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_dechets/{{dataid}}">Déchets</a></li>
-                              <li><a class="fiche-level-3 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_eau/{{dataid}}">Eau</a></li>
-							  <li><a class="fiche-level-3 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_energie/{{dataid}}">Energie-Climat</a></li>
-                            </div>
 
-                            <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_territoire/{{dataid}}">Politique territoriale</a>
+                            <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_environnement_action_regionale/{{dataid}}">Environnement</a>
 
-                            <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_sante/{{dataid}}">Santé</a>
+                            <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_territoire/{{dataid}}">Politique territoriale - Santé - QPV</a>
 
                             <!--<a class="fiche-level-2 disabled">Numérique</a>-->
 
