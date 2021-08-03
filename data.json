@@ -37,11 +37,13 @@
     },
     {
         "dataid": "200066868",
-        "label": "Communauté de communes Presqu'île de Crozon-Aulne maritime"
+        "label": "Communauté de communes Presqu'île de Crozon-Aulne maritime",
+		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_418229/espace-territorial-brest"
     },
     {
         "dataid": "200067072",
-        "label": "Haut-Léon Communauté"
+        "label": "Haut-Léon Communauté",
+		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_418229/espace-territorial-brest"
     },
     {
         "dataid": "200067197",
@@ -53,7 +55,8 @@
     },
     {
         "dataid": "200067247",
-        "label": "Communauté de communes de Pleyben-Châteaulin-Porzay"
+        "label": "Communauté de communes de Pleyben-Châteaulin-Porzay",
+		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_418229/espace-territorial-brest"
     },
     {
         "dataid": "200067460",
@@ -69,7 +72,8 @@
     },
     {
         "dataid": "200068120",
-        "label": "Quimper Bretagne Occidentale"
+        "label": "Quimper Bretagne Occidentale",
+		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_419135/espace-territorial-cornouaille"
     },
     {
         "dataid": "200068989",
@@ -109,15 +113,18 @@
     },
     {
         "dataid": "242900074",
-        "label": "Communauté de communes du Pays d'Iroise"
+        "label": "Communauté de communes du Pays d'Iroise",
+		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_418229/espace-territorial-brest"
     },
     {
         "dataid": "242900314",
-        "label": "Brest Métropole"
+        "label": "Brest Métropole",
+		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_418229/espace-territorial-brest"
     },
     {
         "dataid": "242900553",
-        "label": "Communauté de communes du Pays des Abers"
+        "label": "Communauté de communes du Pays des Abers",
+		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_418229/espace-territorial-brest"
     },
     {
         "dataid": "242900561",
@@ -125,15 +132,18 @@
     },
     {
         "dataid": "242900629",
-        "label": "Communauté de communes Cap Sizun - Pointe du Raz"
+        "label": "Communauté de communes Cap Sizun - Pointe du Raz",
+		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_419135/espace-territorial-cornouaille"
     },
     {
         "dataid": "242900645",
-        "label": "Douarnenez Communauté"
+        "label": "Douarnenez Communauté",
+		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_419135/espace-territorial-cornouaille"
     },
     {
         "dataid": "242900660",
-        "label": "Communauté de communes du Pays Fouesnantais"
+        "label": "Communauté de communes du Pays Fouesnantais",
+		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_419135/espace-territorial-cornouaille"
     },
     {
         "dataid": "242900694",
@@ -141,11 +151,13 @@
     },
     {
         "dataid": "242900702",
-        "label": "Communauté de communes du Pays Bigouden Sud"
+        "label": "Communauté de communes du Pays Bigouden Sud",
+		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_419135/espace-territorial-cornouaille"
     },
     {
         "dataid": "242900710",
-        "label": "Communauté de communes du Haut Pays Bigouden"
+        "label": "Communauté de communes du Haut Pays Bigouden",
+		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_419135/espace-territorial-cornouaille"
     },
     {
         "dataid": "242900744",
@@ -153,23 +165,28 @@
     },
     {
         "dataid": "242900751",
-        "label": "Communauté de communes du Pays de Landivisiau"
+        "label": "Communauté de communes du Pays de Landivisiau",
+		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_418229/espace-territorial-brest"
     },
     {
         "dataid": "242900769",
-        "label": "Concarneau Cornouaille Agglomération"
+        "label": "Concarneau Cornouaille Agglomération",
+		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_419135/espace-territorial-cornouaille"
     },
     {
         "dataid": "242900793",
-        "label": "Communauté de communes du pays de Lesneven et Côte des Légendes"
+        "label": "Communauté de communes du pays de Lesneven et Côte des Légendes",
+		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_418229/espace-territorial-brest"
     },
     {
         "dataid": "242900801",
-        "label": "Communauté de communes du Pays de Landerneau-Daoulas"
+        "label": "Communauté de communes du Pays de Landerneau-Daoulas",
+		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_418229/espace-territorial-brest"
     },
     {
         "dataid": "242900835",
-        "label": "Morlaix Communauté"
+        "label": "Morlaix Communauté",
+		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_418229/espace-territorial-brest"
     },
     {
         "dataid": "243500139",
@@ -213,7 +230,8 @@
     },
     {
         "dataid": "243500782",
-        "label": "Saint-Malo Agglomération"
+        "label": "Saint-Malo Agglomération",
+		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_419135/espace-territorial-cornouaille"
     },
     {
         "dataid": "244400610",
@@ -268,6 +286,10 @@
 		{
 			"id": "ports5",
 			"filter": ["243500782"]
+		},
+		{
+			"id": "test_liamm",
+			"filter": ["200066868", "242900751", "242900314", "242900835", "242900553", "200067247", "242900074", "242900801", "200067072", "242900793", "242900629", "242900660", "200068120", "242900702", "242900769", "242900645", "242900710"]
 		}
     ]
 }
