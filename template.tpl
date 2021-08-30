@@ -7,10 +7,24 @@
 
         <div id="epci_{{dataid}}" class="content-list">
             <div class="card-body">
-                <div class="card"><a class="fiche-level-1 card-header" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_chiffres_cles/{{dataid}}">Les chiffres clés
-                    du territoire<span><i class="fas fa-chart-line"/></span></a>
-                </div>
 
+                <div class="card card-theme">
+                    	<div class="link card-header collapsed" id="heading-{{dataid}}@1" data-toggle="collapse"
+                        	data-target="#overview_{{dataid}}"
+                        	aria-expanded="false" aria-controls="{{dataid}}">
+                        	<h5 class="mb-0">Situation générale du territoire<span class="counter badge badge-dark">0</span></h5>
+                    	</div>
+	
+			<div id="overview_{{dataid}}" class="collapse" aria-labelledby="heading-{{dataid}}@1">
+                        	<div class="fiche-list card-body">
+
+				<a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_chiffres_cles/{{dataid}}">Les chiffres clef </a>
+
+				<a class="fiche-level-2 disabled">Carte des capacités</a>
+
+				</div>
+			</div>
+		</div>
 
                 <div class="card card-theme">
                     <div class="link card-header collapsed" id="heading-{{dataid}}@1" data-toggle="collapse"
@@ -28,17 +42,19 @@
                             <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_population/{{dataid}}">Population du
                                 territoire</a>
 
-                            <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_jeunesse/{{dataid}}">Jeunesse</a>
-
-                            <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_sante/{{dataid}}">Santé</a>
-
-							<a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_environnement_situation/{{dataid}}">Environnement</a>
-
-                            <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_situation_eco/{{dataid}}">Emploi et entreprises</a>
-
                             {{#epci_qpv}}
                                 <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_qpv/{{dataid}}">Fiche quartiers prioritaires de la ville</a>
                             {{/epci_qpv}}
+
+                            <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_jeunesse/{{dataid}}">Jeunesse</a>
+
+                            <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_patrimoine_contexte/{{dataid}}">Patrimoine</a>
+
+                            <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_sante/{{dataid}}">Santé</a>
+
+			    <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_environnement_situation/{{dataid}}">Environnement</a>
+
+                            <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_situation_eco/{{dataid}}">Emploi et entreprises</a>
 
                             <a class="fiche-level-2 disabled">Les schémas</a>
 
@@ -79,24 +95,25 @@
 
                             <a class="fiche-level-2 disabled">L'implantation de la région</a>
 
+                            <a class="fiche-level-2 disabled">Mobilités</a>
+
                             {{#lycee}}
                                 <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_lycee/{{dataid}}">Lycées - éducation</a>
                             {{/lycee}}
 
-                            <!--<a class="fiche-level-2 disabled">Culture – langues régionales - sports</a>-->
+                            <!--<a class="fiche-level-2 disabled">Langues régionales - sports</a>-->
+
+                            <a class="fiche-level-2 disabled">Culture</a>
 
                             <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_patrimoine/{{dataid}}">Inventaire du patrimoine </a>
 
-                            <a class="fiche-level-2 disabled">Mobilités</a>
+                            <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_territoire/{{dataid}}">Politique territoriale - santé</a>
+
+                            <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_environnement_action_regionale/{{dataid}}">Environnement</a>
 
                             <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_economie/{{dataid}}">Economie</a>
 
                             <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_formation/{{dataid}}">Emploi – formation </a>
-							
-
-                            <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_environnement_action_regionale/{{dataid}}">Environnement</a>
-
-                            <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_territoire/{{dataid}}">Politique territoriale - santé</a>
 
                             <!--<a class="fiche-level-2 disabled">Numérique</a>-->
 
@@ -132,19 +149,20 @@
                     <div id="feed_{{dataid}}" class="collapse" aria-labelledby="heading-{{dataid}}@3">
                         <div class="fiche-list card-body">
 
-                            {{#test_liamm}}
-							<a class="fiche-level-2 enabled" target="_blank" href="{{liamm}}">Notes et suivis de dossiers</a>
-							{{/test_liamm}}
+                            	<a class="fiche-level-2 enabled" target="_blank" href="http://prod-kartensig4.cr-bretagne.fr/ws/kentika/fiche-article.php?code_siren={{dataid}}&page=1">Revue de presse</a>
 
-                            <a class="fiche-level-2 enabled" target="_blank" href="http://prod-kartensig4.cr-bretagne.fr/ws/kentika/fiche-article.php?code_siren={{dataid}}&page=1">Revue de presse</a>
-
-							<a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_actualites/{{dataid}}">Statistiques des articles </a>
+				<a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_actualites/{{dataid}}">Statistiques des articles </a>
 
                         </div>
                     </div>
                 </div>
 
-
+		{{#test_liamm}}
+        		<div id="epci_{{dataid}}" class="content-list">
+            		<div class="card-body">
+                	<div class="card"><a class="fiche-level-1 card-header" target="_blank" href="{{liamm}}">Notes et suivis de dossiers (Espace Territorial)<span><i class="fas fa-chart-line"/></span></a>
+                	</div>
+		{{/test_liamm}}
 
 
 
