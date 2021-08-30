@@ -18,7 +18,7 @@
 			<div id="overview_{{dataid}}" class="collapse" aria-labelledby="heading-{{dataid}}@1">
                         	<div class="fiche-list card-body">
 
-				<a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_chiffres_cles/{{dataid}}">Les chiffres clef </a>
+				<a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_chiffres_cles/{{dataid}}">Les chiffres clés</a>
 
 				<a class="fiche-level-2 disabled">Carte des capacités</a>
 
