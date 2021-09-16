@@ -149,7 +149,7 @@
                     <div id="feed_{{dataid}}" class="collapse" aria-labelledby="heading-{{dataid}}@3">
                         <div class="fiche-list card-body">
 
-                            	<a class="fiche-level-2 enabled" target="_blank" href="http://prod-kartensig4.cr-bretagne.fr/ws/kentika/fiche-article.php?code_siren={{dataid}}&page=1">Revue de presse</a>
+                            <a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/ws/kentika/fiche-article.php?code_siren={{dataid}}&page=1">Revue de presse</a>
 
 				<a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_actualites/{{dataid}}">Statistiques des articles </a>
 
