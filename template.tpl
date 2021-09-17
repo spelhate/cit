@@ -12,7 +12,7 @@
                     	<div class="link card-header collapsed" id="heading-{{dataid}}@1" data-toggle="collapse"
                         	data-target="#overview_{{dataid}}"
                         	aria-expanded="false" aria-controls="{{dataid}}">
-                        	<h5 class="mb-0">Situation générale du territoire<span class="counter badge badge-dark">0</span></h5>
+                        	<h5 class="mb-0">Le territoire en bref<span class="counter badge badge-dark">0</span></h5>
                     	</div>
 	
 			<div id="overview_{{dataid}}" class="collapse" aria-labelledby="heading-{{dataid}}@1">
@@ -20,7 +20,7 @@
 
 				<a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_chiffres_cles/{{dataid}}">Les chiffres clés</a>
 
-				<a class="fiche-level-2 disabled">Carte des capacités</a>
+				<a class="fiche-level-2 disabled">Capacités de développement</a>
 
 				</div>
 			</div>
