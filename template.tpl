@@ -20,7 +20,7 @@
 
 				<a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_chiffres_cles/{{dataid}}">Les chiffres clés</a>
 
-				<a class="fiche-level-2 disabled">Capacités de développement</a>
+				<a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_capacites/{{dataid}}">Capacités de développement</a>
 
 				</div>
 			</div>
