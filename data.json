@@ -1,57 +1,61 @@
 {
     "epci": [{
-        "dataid": "200027027",
-        "label": "Communauté de communes Arc Sud Bretagne"
-    },
-    {
-        "dataid": "200038990",
-        "label": "Communauté de communes de Saint-Méen Montauban"
-    },
-    {
-        "dataid": "200039022",
-        "label": "Vitré Communauté"
-    },
-    {
-        "dataid": "200042174",
-        "label": "Lorient Agglomération"
-    },
-    {
         "dataid": "200043123",
         "label": "Auray Quiberon Terre Atlantique"
     },
     {
-        "dataid": "200043990",
-        "label": "Vallons de Haute-Bretagne Communauté"
-    },
-    {
-        "dataid": "200065928",
-        "label": "Lannion Trégor Communauté"
-    },
-    {
-        "dataid": "200066777",
-        "label": "Ploërmel Communauté"
-    },
-    {
-        "dataid": "200066785",
-        "label": "De l'Oust à Brocéliande Communauté"
-    },
-    {
-        "dataid": "200066868",
-        "label": "Communauté de communes Presqu'île de Crozon-Aulne maritime",
+        "dataid": "242900314",
+        "label": "Brest Métropole",
 		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_418229/espace-territorial-brest"
     },
     {
-        "dataid": "200067072",
-        "label": "Haut-Léon Communauté",
-		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_418229/espace-territorial-brest"
+        "dataid": "200070662",
+        "label": "Bretagne porte de Loire Communauté"
     },
     {
-        "dataid": "200067197",
-        "label": "Monts d'Arrée Communauté"
+        "dataid": "244400610",
+        "label": "Cap Atlantique"
     },
     {
         "dataid": "200067221",
         "label": "Centre Morbihan Communauté "
+    },
+    {
+        "dataid": "242900694",
+        "label": "Communauté d'agglomération du Pays de Quimperlé"
+    },
+	{
+        "dataid": "200027027",
+        "label": "Communauté de communes Arc Sud Bretagne"
+    },
+    {
+        "dataid": "243500733",
+        "label": "Communauté de communes Bretagne Romantique"
+    },
+    {
+        "dataid": "242900629",
+        "label": "Communauté de communes Cap Sizun - Pointe du Raz",
+		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_419135/espace-territorial-cornouaille"
+    },
+    {
+        "dataid": "245600465",
+        "label": "Communauté de communes de Belle Ile en Mer"
+    },
+    {
+        "dataid": "245600440",
+        "label": "Communauté de communes de Blavet Bellevue Océan"
+    },
+    {
+        "dataid": "243500618",
+        "label": "Communauté de communes de Brocéliande"
+    },
+    {
+        "dataid": "242900561",
+        "label": "Communauté de communes de Haute Cornouaille"
+    },
+    {
+        "dataid": "243500725",
+        "label": "Communauté de communes de la Côte d'Emeraude"
     },
     {
         "dataid": "200067247",
@@ -59,8 +63,90 @@
 		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_418229/espace-territorial-brest"
     },
     {
-        "dataid": "200067460",
-        "label": "Loudéac Communauté – Bretagne Centre"
+        "dataid": "200038990",
+        "label": "Communauté de communes de Saint-Méen Montauban"
+    },
+    {
+        "dataid": "242200715",
+        "label": "Communauté de communes du Kreiz-Breizh"
+    },
+    {
+        "dataid": "242900710",
+        "label": "Communauté de communes du Haut Pays Bigouden",
+		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_419135/espace-territorial-cornouaille"
+    },
+    {
+        "dataid": "242900702",
+        "label": "Communauté de communes du Pays Bigouden Sud",
+		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_419135/espace-territorial-cornouaille"
+    },
+    {
+        "dataid": "243500659",
+        "label": "Communauté de communes du Pays de Châteaugiron"
+    },
+    {
+        "dataid": "200070670",
+        "label": "Communauté de communes du pays de Dol et de la Baie du Mont St Michel"
+    },
+    {
+        "dataid": "242900801",
+        "label": "Communauté de communes du Pays de Landerneau-Daoulas",
+		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_418229/espace-territorial-brest"
+    },
+    {
+        "dataid": "242900751",
+        "label": "Communauté de communes du Pays de Landivisiau",
+		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_418229/espace-territorial-brest"
+    },
+    {
+        "dataid": "242900793",
+        "label": "Communauté de communes du pays de Lesneven et Côte des Légendes",
+		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_418229/espace-territorial-brest"
+    },
+    {
+        "dataid": "242900553",
+        "label": "Communauté de communes du Pays des Abers",
+		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_418229/espace-territorial-brest"
+    },
+    {
+        "dataid": "242900660",
+        "label": "Communauté de communes du Pays Fouesnantais",
+		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_419135/espace-territorial-cornouaille"
+    },
+    {
+        "dataid": "200066868",
+        "label": "Communauté de communes Presqu'île de Crozon-Aulne maritime",
+		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_418229/espace-territorial-brest"
+    },
+    {
+        "dataid": "243500667",
+        "label": "Communauté de communes Val d'Ille - Aubigné"
+    },
+    {
+        "dataid": "242900769",
+        "label": "Concarneau Cornouaille Agglomération",
+		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_419135/espace-territorial-cornouaille"
+    },
+    {
+        "dataid": "200070688",
+        "label": "Couesnon Marches de Bretagne"
+    },
+    {
+        "dataid": "200066785",
+        "label": "De l'Oust à Brocéliande Communauté"
+    },
+    {
+        "dataid": "242900645",
+        "label": "Douarnenez Communauté",
+		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_419135/espace-territorial-cornouaille"
+    },
+    {
+        "dataid": "200068989",
+        "label": "Dinan Agglomération"
+    },
+    {
+        "dataid": "200072452",
+        "label": "Fougères Agglomération"
     },
     {
         "dataid": "200067932",
@@ -71,117 +157,41 @@
         "label": "Guingamp-Paimpol Agglomération"
     },
     {
-        "dataid": "200068120",
-        "label": "Quimper Bretagne Occidentale",
-		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_419135/espace-territorial-cornouaille"
-    },
-    {
-        "dataid": "200068989",
-        "label": "Dinan Agglomération"
-    },
-    {
-        "dataid": "200069086",
-        "label": "Leff Armor Communauté"
+        "dataid": "200067072",
+        "label": "Haut-Léon Communauté",
+		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_418229/espace-territorial-brest"
     },
     {
         "dataid": "200069391",
         "label": "Lamballe Terre et Mer"
     },
     {
-        "dataid": "200069409",
-        "label": "Saint-Brieuc Armor Agglomération"
+        "dataid": "200065928",
+        "label": "Lannion Trégor Communauté"
     },
     {
-        "dataid": "200070662",
-        "label": "Bretagne porte de Loire Communauté"
+        "dataid": "200069086",
+        "label": "Leff Armor Communauté"
     },
     {
-        "dataid": "200070670",
-        "label": "Communauté de communes du pays de Dol et de la Baie du Mont St Michel"
+        "dataid": "243500774",
+        "label": "Liffré-Cormier Communauté"
     },
     {
-        "dataid": "200070688",
-        "label": "Couesnon Marches de Bretagne"
+        "dataid": "200042174",
+        "label": "Lorient Agglomération"
     },
     {
-        "dataid": "200072452",
-        "label": "Fougères Agglomération"
+        "dataid": "200067460",
+        "label": "Loudéac Communauté – Bretagne Centre"
     },
     {
-        "dataid": "242200715",
-        "label": "Communauté de communes du Kreiz-Breizh"
+        "dataid": "243500550",
+        "label": "Montfort Communauté"
     },
     {
-        "dataid": "242900074",
-        "label": "Communauté de communes du Pays d'Iroise",
-		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_418229/espace-territorial-brest"
-    },
-    {
-        "dataid": "242900314",
-        "label": "Brest Métropole",
-		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_418229/espace-territorial-brest"
-    },
-    {
-        "dataid": "242900553",
-        "label": "Communauté de communes du Pays des Abers",
-		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_418229/espace-territorial-brest"
-    },
-    {
-        "dataid": "242900561",
-        "label": "Communauté de communes de Haute Cornouaille"
-    },
-    {
-        "dataid": "242900629",
-        "label": "Communauté de communes Cap Sizun - Pointe du Raz",
-		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_419135/espace-territorial-cornouaille"
-    },
-    {
-        "dataid": "242900645",
-        "label": "Douarnenez Communauté",
-		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_419135/espace-territorial-cornouaille"
-    },
-    {
-        "dataid": "242900660",
-        "label": "Communauté de communes du Pays Fouesnantais",
-		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_419135/espace-territorial-cornouaille"
-    },
-    {
-        "dataid": "242900694",
-        "label": "Communauté d'agglomération du Pays de Quimperlé"
-    },
-    {
-        "dataid": "242900702",
-        "label": "Communauté de communes du Pays Bigouden Sud",
-		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_419135/espace-territorial-cornouaille"
-    },
-    {
-        "dataid": "242900710",
-        "label": "Communauté de communes du Haut Pays Bigouden",
-		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_419135/espace-territorial-cornouaille"
-    },
-    {
-        "dataid": "242900744",
-        "label": "Poher Communauté"
-    },
-    {
-        "dataid": "242900751",
-        "label": "Communauté de communes du Pays de Landivisiau",
-		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_418229/espace-territorial-brest"
-    },
-    {
-        "dataid": "242900769",
-        "label": "Concarneau Cornouaille Agglomération",
-		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_419135/espace-territorial-cornouaille"
-    },
-    {
-        "dataid": "242900793",
-        "label": "Communauté de communes du pays de Lesneven et Côte des Légendes",
-		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_418229/espace-territorial-brest"
-    },
-    {
-        "dataid": "242900801",
-        "label": "Communauté de communes du Pays de Landerneau-Daoulas",
-		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_418229/espace-territorial-brest"
+        "dataid": "200067197",
+        "label": "Monts d'Arrée Communauté"
     },
     {
         "dataid": "242900835",
@@ -189,44 +199,50 @@
 		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_418229/espace-territorial-brest"
     },
     {
-        "dataid": "243500139",
-        "label": "Rennes Métropole"
+        "dataid": "242900074",
+        "label": "Pays d'Iroise Communauté",
+		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_418229/espace-territorial-brest"
     },
     {
-        "dataid": "243500550",
-        "label": "Montfort Communauté"
+        "dataid": "200066777",
+        "label": "Ploërmel Communauté"
     },
     {
-        "dataid": "243500618",
-        "label": "Communauté de communes de Brocéliande"
+        "dataid": "242900744",
+        "label": "Poher Communauté"
     },
     {
-        "dataid": "243500634",
-        "label": "Roche aux Fées Communauté"
+        "dataid": "245614433",
+        "label": "Pontivy Communauté"
     },
     {
-        "dataid": "243500659",
-        "label": "Communauté de communes du Pays de Châteaugiron"
+        "dataid": "245614383",
+        "label": "Questembert Communauté"
     },
     {
-        "dataid": "243500667",
-        "label": "Communauté de communes Val d'Ille - Aubigné"
-    },
-    {
-        "dataid": "243500725",
-        "label": "Communauté de communes de la Côte d'Emeraude"
-    },
-    {
-        "dataid": "243500733",
-        "label": "Communauté de communes Bretagne Romantique"
+        "dataid": "200068120",
+        "label": "Quimper Bretagne Occidentale",
+		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_419135/espace-territorial-cornouaille"
     },
     {
         "dataid": "243500741",
         "label": "Redon Agglomération"
     },
     {
-        "dataid": "243500774",
-        "label": "Liffré-Cormier Communauté"
+        "dataid": "243500139",
+        "label": "Rennes Métropole"
+    },
+    {
+        "dataid": "243500634",
+        "label": "Roche aux Fées Communauté"
+    },
+    {
+        "dataid": "245614417",
+        "label": "Roi Morvan Communauté"
+    },
+    {
+        "dataid": "200069409",
+        "label": "Saint-Brieuc Armor Agglomération"
     },
     {
         "dataid": "243500782",
@@ -234,28 +250,12 @@
 		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_419135/espace-territorial-cornouaille"
     },
     {
-        "dataid": "244400610",
-        "label": "CA de la Presqu'île de Guérande Atlantique (Cap Atlantique)"
+        "dataid": "200043990",
+        "label": "Vallons de Haute-Bretagne Communauté"
     },
     {
-        "dataid": "245600440",
-        "label": "Communauté de communes de Blavet Bellevue Océan"
-    },
-    {
-        "dataid": "245600465",
-        "label": "Communauté de communes de Belle Ile en Mer"
-    },
-    {
-        "dataid": "245614383",
-        "label": "Questembert Communauté"
-    },
-    {
-        "dataid": "245614417",
-        "label": "Roi Morvan Communauté"
-    },
-    {
-        "dataid": "245614433",
-        "label": "Pontivy Communauté"
+        "dataid": "200039022",
+        "label": "Vitré Communauté"
     }
     ],
     "fiches": [
