@@ -1773,8 +1773,13 @@ blockquote footer {
 /**************************************************/
 .footer {
   width:100%;
-  background: #121212;
-  height: 160px; 
+  background: #ffffff;
+  height: 50px; 
+}
+
+.footer .footer-text {
+  margin-left: 10px;
+  font-size: 1.2rem;
 }
 
 .footer .wrapper {
