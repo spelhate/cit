@@ -55,7 +55,7 @@
 
 				<div id="action_{{dataid}}" class="collapse" aria-labelledby="heading-{{dataid}}@2">
 					<div class="fiche-list card-body">
-						<a class="fiche-level-2 disabled">Implantation de la région</a>
+						<a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_implantation_crb/{{dataid}}">Implantation de la région</a>
 						{{#ports1}}
 							<a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_port/{{dataid}}">Ports </a>
 						{{/ports1}}
