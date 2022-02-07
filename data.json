@@ -17,8 +17,13 @@
         "label": "Cap Atlantique"
     },
     {
-        "dataid": "200067221",
+        "dataid": "200096683",
         "label": "Centre Morbihan Communauté "
+    },
+    {
+        "dataid": "242900801",
+        "label": "Communauté d'agglomération du Pays de Landerneau-Daoulas",
+		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_418229/espace-territorial-brest"
     },
     {
         "dataid": "242900694",
@@ -27,6 +32,10 @@
 	{
         "dataid": "200027027",
         "label": "Communauté de communes Arc Sud Bretagne"
+    },
+    {
+        "dataid": "200096675",
+        "label": "Communauté de communes Baud Communauté"
     },
     {
         "dataid": "243500733",
@@ -89,18 +98,8 @@
         "label": "Communauté de communes du pays de Dol et de la Baie du Mont St Michel"
     },
     {
-        "dataid": "242900801",
-        "label": "Communauté de communes du Pays de Landerneau-Daoulas",
-		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_418229/espace-territorial-brest"
-    },
-    {
         "dataid": "242900751",
         "label": "Communauté de communes du Pays de Landivisiau",
-		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_418229/espace-territorial-brest"
-    },
-    {
-        "dataid": "242900793",
-        "label": "Communauté de communes du pays de Lesneven et Côte des Légendes",
 		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_418229/espace-territorial-brest"
     },
     {
@@ -121,6 +120,11 @@
     {
         "dataid": "243500667",
         "label": "Communauté de communes Val d'Ille - Aubigné"
+    },
+    {
+        "dataid": "242900793",
+        "label": "Communauté Lesneven Côte des Légendes",
+		"liamm": "https://liamm.bretagne.bzh/coopcloud/jcms/prod_418229/espace-territorial-brest"
     },
     {
         "dataid": "242900769",
@@ -265,7 +269,7 @@
         },
         {
             "id": "lycee",
-            "filter": ["200038990","200039022","200042174","200043123","200065928","200066777","200066785","200066868","200067072","200067197","200067221","200067247","200067460","200067932","200067981","200068120","200068989","200069391","200069409","200070662","200070670","200072452","242200715","242900314","242900645","242900660","242900694","242900702","242900744","242900751","242900769","242900793","242900801","242900835","243500139","243500550","243500725","243500733","243500741","243500774","243500782","245600440","245614383","245614417","245614433"]
+            "filter": ["200038990","200039022","200042174","200043123","200065928","200066777","200066785","200066868","200067072","200067197","200096683","200067247","200067460","200067932","200067981","200068120","200068989","200069391","200069409","200070662","200070670","200072452","242200715","242900314","242900645","242900660","242900694","242900702","242900744","242900751","242900769","242900793","242900801","242900835","243500139","243500550","243500725","243500733","243500741","243500774","243500782","245600440","245614383","245614417","245614433"]
         },
 		{
 			"id": "ports1",
