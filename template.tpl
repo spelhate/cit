@@ -15,7 +15,9 @@
 				<div id="overview_{{dataid}}" class="collapse" aria-labelledby="heading-{{dataid}}@1">
 					<div class="fiche-list card-body">
 						<a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_chiffres_cles/{{dataid}}">Les chiffres clés</a>
+						{{#epci_2021}}
 						<a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_capacites/{{dataid}}">Capacités de développement</a>
+						{{/epci_2021}}
 					</div>
 				</div>
 			</div>
@@ -38,7 +40,9 @@
 						{{/epci_qpv}}
 						<a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_jeunesse/{{dataid}}">Jeunesse</a>
 						<a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_patrimoine_contexte/{{dataid}}">Patrimoine</a>
+						{{#epci_2021}}
 						<a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_sante/{{dataid}}">Santé</a>
+						{{/epci_2021}}
 						<a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_environnement_situation/{{dataid}}">Environnement</a>
 						<a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_situation_eco/{{dataid}}">Economie et emploi</a>
 						<a class="fiche-level-2 disabled">Les schémas</a>
@@ -55,7 +59,9 @@
 
 				<div id="action_{{dataid}}" class="collapse" aria-labelledby="heading-{{dataid}}@2">
 					<div class="fiche-list card-body">
+						{{#epci_2021}}
 						<a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_implantation_crb/{{dataid}}">Implantation de la région</a>
+						{{/epci_2021}}
 						{{#ports1}}
 							<a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_port/{{dataid}}">Ports </a>
 						{{/ports1}}
