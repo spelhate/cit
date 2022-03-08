@@ -45,7 +45,7 @@
 						{{/epci_2021}}
 						<a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_environnement_situation/{{dataid}}">Environnement</a>
 						<a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_situation_eco/{{dataid}}">Economie et emploi</a>
-						<a class="fiche-level-2 disabled">Les schémas</a>
+						<a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_schemas/{{dataid}}">Les schémas</a>
 					</div>
 				</div>
 			</div>
