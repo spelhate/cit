@@ -17,7 +17,7 @@
 						<a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_chiffres_cles/{{dataid}}">Les chiffres clés</a>
 						{{#epci_2021}}
 						<a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_capacites/{{dataid}}">Capacités de développement</a>
-						{{/epci_2021}}
+						{{/epci_2021}}						
 					</div>
 				</div>
 			</div>
@@ -38,6 +38,7 @@
 						{{#epci_qpv}}
 							<a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_qpv/{{dataid}}">Quartiers prioritaires de la ville</a>
 						{{/epci_qpv}}
+						<a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_egalite_sexes/{{dataid}}">Égalité femmes-hommes</a>
 						<a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_jeunesse/{{dataid}}">Jeunesse</a>
 						<a class="fiche-level-2 enabled" target="_blank" href="https://kartenn.region-bretagne.fr/mreport/epci_patrimoine_contexte/{{dataid}}">Patrimoine</a>
 						{{#epci_2021}}
