@@ -14,9 +14,23 @@
 				</div>
 				<div id="overview_{{dataid}}" class="collapse" aria-labelledby="heading-{{dataid}}@1">
 					<div class="fiche-list card-body">
-						<a class="fiche-level-2 enabled" target="_blank" href="https://dataviz-preprod.megalis.bretagne.bzh/mpublisher/synthese/{{dataid}}">Synthèse</a>
+						<a class="fiche-level-2 enabled" target="_blank" href="https://dataviz-preprod.megalis.bretagne.bzh/mpublisher/synthese/{{dataid}}/2022">Synthèse</a>
 						
-						<a class="fiche-level-2 enabled" target="_blank" href="https://dataviz-preprod.megalis.bretagne.bzh/mpublisher/actes/{{dataid}}">Télétransmission des actes</a>
+						<a class="fiche-level-2 enabled" target="_blank" href="https://dataviz-preprod.megalis.bretagne.bzh/mpublisher/actes/{{dataid}}/2022">Télétransmission des actes</a>
+
+						<a class="fiche-level-2 enabled" target="_blank" href="https://dataviz-preprod.megalis.bretagne.bzh/mpublisher/marches/{{dataid}}/2022">Salle des marchés publics</a>
+
+						<a class="fiche-level-2 enabled" target="_blank" href="https://dataviz-preprod.megalis.bretagne.bzh/mpublisher/idelibre/{{dataid}}/2022">Convocation électronique des élus</a>
+
+						<a class="fiche-level-2 enabled" target="_blank" href="https://dataviz-preprod.megalis.bretagne.bzh/mpublisher/pes/{{dataid}}/2022">Télétransmission des flux PES</a>
+
+						<a class="fiche-level-2 enabled" target="_blank" href="https://dataviz-preprod.megalis.bretagne.bzh/mpublisher/parapheur/{{dataid}}/2022">Parapheur électronique</a>
+
+						<a class="fiche-level-2 enabled" target="_blank" href="https://dataviz-preprod.megalis.bretagne.bzh/mpublisher/sesf/{{dataid}}/2022">Service d'échanges sécurisés de fichiers (SESF)</a>
+
+						<a class="fiche-level-2 enabled" target="_blank" href="https://dataviz-preprod.megalis.bretagne.bzh/mpublisher/ged/{{dataid}}/2022">Gestion électronique des documents</a>
+
+						<a class="fiche-level-2 enabled" target="_blank" href="https://dataviz-preprod.megalis.bretagne.bzh/mpublisher/visio/{{dataid}}/2022">Visioconférence</a>
 											
 					</div>
 				</div>
